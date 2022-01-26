@@ -3,5 +3,12 @@
  * Все паршалы подключаются сюда.
  */
 
+@import './base/reset';
+@import './base/typographia';
+
+@import './utils/variables';
+
+@import './components/container';
+
 // Стили для файла с примером HTML-фрагмента
 @import './example';
