@@ -2,11 +2,10 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+@import './utils/variables';
 
 @import './base/reset';
 @import './base/typographia';
-
-@import './utils/variables';
 
 @import './components/container';
 
