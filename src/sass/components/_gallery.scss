@@ -13,7 +13,9 @@
 
 .gallery__item {
   outline: 1px solid blue;
+  overflow: hidden;
   display: inline-block;
+  border-radius: 5px;
   //   width: 40px;
   //   height: 40px;
 }
