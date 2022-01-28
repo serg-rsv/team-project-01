@@ -41,7 +41,7 @@
 .gallery__image {
   display: block;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
 
   .gallery__list:hover & {
     filter: blur(2px) grayscale(1);
@@ -51,9 +51,11 @@
     filter: blur(0) grayscale(0);
   }
 
-  // &:hover, &:focus {
-  //   transform: scale(1.15);
-  // }
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: transform 3s ease-in-out 0.3s;
+  }
 }
 
 .gallery__item {
