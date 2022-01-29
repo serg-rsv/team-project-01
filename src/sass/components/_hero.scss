@@ -1,0 +1,73 @@
+.hero {
+  & .container {
+    background: $color-bg-prime;
+  }
+}
+
+.hero__buttons {
+  display: inline-flex;
+  padding-left: 70px;
+  margin-bottom: 56px;
+}
+
+.page-title {
+  font-family: $font-fat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-light;
+
+  padding-left: 70px;
+  margin-bottom: 25px;
+
+  &--decor {
+    font-size: 58px;
+    line-height: 90.5%;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $color-main;
+  }
+}
+
+.button--products {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  width: 104px;
+  height: 40px;
+
+  margin-right: 15px;
+
+  &:focus,
+  &:hover {
+    background: $color-hover-dark;
+    color: $color-light;
+    cursor: pointer;
+  }
+}
+
+.button--about {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  width: 138px;
+  height: 40px;
+
+  &:focus,
+  &:hover {
+    background: $color-hover-light;
+    cursor: pointer;
+  }
+}
