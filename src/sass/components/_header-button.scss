@@ -1,0 +1,29 @@
+.button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: $color-main;
+
+  width: 159px;
+  height: 44px;
+
+  background: $color-light;
+  border-radius: 22px;
+  border: none;
+
+  &:focus,
+  &:hover {
+    background: $color-hover-light;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: url('../images/img-for-hero-header/vector-right.png');
+
+    display: inline-block;
+    margin-left: 12px;
+  }
+}

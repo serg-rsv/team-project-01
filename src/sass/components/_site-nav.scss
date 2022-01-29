@@ -1,0 +1,32 @@
+.site-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+}
+
+.site-nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-nav__link {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.31;
+
+  display: flex;
+  align-items: center;
+
+  color: $color-light;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+  }
+}

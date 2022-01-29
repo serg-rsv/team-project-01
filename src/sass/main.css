@@ -82,6 +82,101 @@ body {
   }
 }
 
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 37px;
+  margin-bottom: 84px;
+  background-color: #ffb8ca;
+}
+
+.header__link {
+  display: block;
+}
+
+.header__logo {
+  width: 199px;
+  height: 50px;
+}
+
+.header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-nav__item {
+  margin-right: 35px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
+}
+
+.site-nav__link {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #d41443;
+}
+
+.button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  width: 159px;
+  height: 44px;
+  background: #fff;
+  border-radius: 22px;
+  border: none;
+}
+
+.button:focus, .button:hover {
+  background: #ecebeb;
+  cursor: pointer;
+}
+
+.button::after {
+  content: url("../images/img-for-hero-header/vector-right.png");
+  display: inline-block;
+  margin-left: 12px;
+}
+
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 48px, #fff 48px);
 }
