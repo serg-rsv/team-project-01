@@ -168,6 +168,14 @@
     top: 230px;
   }
 }
+.products__btn {
+  fill: #d41443;
+}
+.products__link:hover .products__btn,
+.products__link:focus .products__btn {
+  fill: #ffffff;
+}
+
 .products__item:not(:last-child) {
   margin-bottom: 130px;
 }
@@ -185,6 +193,10 @@
   margin: 40px 120px 40px 120px;
   border: none;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
   @media (min-width: 768px) {
     margin-left: 90px;
     margin-right: 90px;
