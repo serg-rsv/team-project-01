@@ -2,25 +2,20 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+
 @import './utils/variables';
 @import './utils/hidden';
-
 @import './base/reset';
 @import './base/typographia';
-
 @import './components/common/container';
-
 // Hero header import start
-
 // Hero header import end
 // Products import start
-
 // Products import end
 // About import start
-
 // About import end
 // Advantages import start
-
+@import './components/advantages/advantages';
 // Advantages import end
 // Gallery import start
 @import './components/gallery';
