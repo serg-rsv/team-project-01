@@ -8,6 +8,8 @@
 }
 
 .site-nav__item {
+  position: relative;
+  z-index: 10;
   margin-right: 35px;
 
   &:last-child {

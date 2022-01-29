@@ -1,11 +1,13 @@
 .header {
+  background: $color-bg-prime;
+}
+
+.header {
   & .container {
     display: flex;
     justify-content: space-between;
     padding-top: 37px;
     padding-bottom: 84px;
-
-    background-color: $color-bg-prime;
   }
 }
 

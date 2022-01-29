@@ -1,6 +1,12 @@
 .hero {
+  background: $color-bg-prime;
+}
+
+.hero {
   & .container {
-    background: $color-bg-prime;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -33,6 +39,10 @@
 
     color: $color-main;
   }
+}
+
+.hero__link {
+  display: block;
 }
 
 .button--products {
@@ -70,4 +80,57 @@
     background: $color-hover-light;
     cursor: pointer;
   }
+}
+
+.hero__image {
+  display: inline-flex;
+  padding-left: 37px;
+  padding-bottom: 45px;
+}
+
+.hero__descr {
+  width: 200px;
+  margin-left: 30px;
+  padding-top: 55px;
+}
+
+.hero__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.42;
+
+  color: $color-light;
+
+  margin-bottom: 20px;
+}
+
+.img-pos {
+  position: absolute;
+}
+
+.hero__ellipse {
+  top: -7.3em;
+  left: 38%;
+}
+
+.hero__icecream {
+  bottom: 0;
+  left: 49%;
+}
+
+.hero__tasty {
+  bottom: 0;
+  right: 15px;
+}
+
+.hero__cafes {
+  top: -12px;
+  right: 15px;
+}
+
+.hero__foodtracks {
+  top: 16%;
+  right: 15px;
 }
