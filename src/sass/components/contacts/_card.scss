@@ -1,0 +1,31 @@
+.card__item {
+  width: 220px;
+  height: 427px;
+  background: $color-light;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.card__location {
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  color: $color-light;
+
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card--color {
+  background: #c2e297;
+}
