@@ -43,7 +43,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et.
             </p>
-            <button type="button" class="products__link">
+            <button type="button" class="products__link " data-modal-open>
               <svg width="15" height="15" >
                 <use
                   class="products__btn"
@@ -57,15 +57,22 @@
     </div>
     
    <!-- model window -->
-    <div class="products__window" data-menu-modal>
-      <button type="button" class="menu-toggle" data-menu-modal-close></button>
-      <h3 class="products__title">ice cream</h3>
-      <p class="products__subtitle">
-        Мороженое — пищевой продукт-десерт, представляющий собой замороженную в
-        процессе непрерывного взбивания массу, содержащую в основе своей
-        питательные, вкусовые, ароматические и эмульгирующие вещества.
-      </p>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close__btn " data-modal-close>
+          <svg class="icon__cross" width="15px" height="15px">
+            <use href="images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <h3 class="products__title">ice cream</h3>
+        <p class="products__subtitle">
+          Мороженое — пищевой продукт-десерт, представляющий собой замороженную
+          в процессе непрерывного взбивания массу, содержащую в основе своей
+          питательные, вкусовые, ароматические и эмульгирующие вещества.
+        </p>
+      </div>
     </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>
 </html>
