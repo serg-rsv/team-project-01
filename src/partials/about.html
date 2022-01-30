@@ -1,4 +1,4 @@
-<section class="about">
+<section id="about" class="about">
     <!-- Зоя Ратушная -->
     <div class="container">
         <p class= "about__title"> tradition and love</p>
@@ -7,12 +7,12 @@
             <div class="about__img">
                 <picture>
                     <!-- desktop -->
-                    <source media="(min-width: 1200px)" srcset="img_about/about_desktop@1x.png  1x, img_about/about_desktop@2x.png 2x" />
+                    <source media="(min-width: 1280px)" srcset="img_about/about_desktop@1x.png  1x, img_about/about_desktop@2x.png 2x" />
                     <!-- tablet -->
-                    <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img_about/about_tablet@1x.png  1x, img_about/about_tablet@2x.png 2x" />
+                    <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img_about/about_tablet@1x.png  1x, img_about/about_tablet@2x.png 2x" />
                     <!-- mobile -->
-                    <source media="(min-width: 320px) and (max-width: 1199px)" srcset="img_about/about_mobile@1x.png  1x, img_about/about_mobile@1x.png 2x" />
-                    <img src="img_about/about_desktop@1x.png" alt="about">
+                    <source media="(min-width: 320px) and (max-width: 768px)" srcset="img_about/about_mobile@1x.png  1x, img_about/about_mobile@1x.png 2x" />
+                    <img src="img_about/about_desktop@1x.png" alt="how it’s made">
                 </picture>
             </div>
             <div class="about__textContent">
@@ -22,9 +22,31 @@
                 <p class="about__entry">
                     Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button type="submit" class="about__button">
-                    Read more
-                </button>
+                <div>
+                    <a href="#popup" popup-link> 
+                        <button type="submit" class="button about__button">
+                            Read more
+                        </button>   
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal window popup -->
+    <div id="popup" class="popup">
+        <a href="#about" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+              <a href="#about" class="popup__close">X</a>
+                <div class="popup__title"> 100% NATURAL PRODUCTS</div>
+                    <div class="popup__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis nam aperiam deserunt tenetur officiis unde consequatur obcaecati explicabo minima, dolorem et beatae sit ab molestias voluptas. Officia, amet deleniti!<br>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis nam aperiam deserunt tenetur officiis unde consequatur obcaecati explicabo minima, dolorem et beatae sit ab molestias voluptas. Officia, amet deleniti!<br>
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis nam aperiam deserunt tenetur officiis unde consequatur obcaecati explicabo minima, dolorem et beatae sit ab molestias voluptas. Officia, amet deleniti!<br>
+                        <div class="about__img">
+                            <img src="img_about/milk_modal@1x.png" alt="NATURAL PRODUCTS">
+                        </div>
+                    </div>
             </div>
         </div>
     </div>

@@ -1,18 +1,24 @@
 .about {
-    background: $color-bg-second;
     width: 100%;
     text-align: center;
-    @media screen and (max-width: $mobile) { 
-        
+    @media screen and (max-width: $tablet) { 
+        background: url('../img_about/about_milk_mobile@1x.png') no-repeat bottom 44px center $color-bg-second;
+        background-size: contain;
+        @media (-webkit-min-device-pixel-ratio: 2) { 
+            background:url('../img_about/about_milk_mobile@2x.png') no-repeat bottom 44px center $color-bg-second;
+            background-size: contain;
+        }
     }
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-        
+    @media screen and (min-width: $tablet) and (max-width: 1279px) {
+        background: $color-bg-second;
     }
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-        
-    }
-    @media screen and (min-width: $desktop ){
-        
+    @media screen and (min-width: 1200px){
+        background: url('../img_about/about_milk_desktop@1x.png') no-repeat bottom center $color-bg-second;
+        background-size: contain;
+        @media (-webkit-min-device-pixel-ratio: 2) { 
+            background:url('../img_about/about_milk_desktop@2x.png') no-repeat bottom center $color-bg-second;
+            background-size: contain;
+        }
     }
 }
 
@@ -63,10 +69,10 @@
 }
 
 .about__textContent {
-    @media screen and (min-width: $tablet) and (max-width: $desktop){
+    @media screen and (min-width: $tablet) and (max-width: 1279px){
         width: 340px;
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: 1280px){
         width: 463px;
     }
 }
@@ -105,15 +111,78 @@
 }
 
 .about__button {
-    font-family: $font-main;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    color: $color-main;
-    width: 176px;
-    height: 44px;
-    left: 50px;
-    background: $color-light;
-    border-radius: 22px;
+    
+}
+
+// modal window popup
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s ;
+    z-index: 100;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__area {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: $color-bg-prime;
+    color: #000000;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.popup__title {
+font-size: 40px;
+margin: 0px 0px 1em 0px;
+color: $color-main;
+}
+
+.popup__text {
+ color: $color-midle;
+ text-align: left;
 }

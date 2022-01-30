@@ -1,0 +1,28 @@
+.button {
+    position: relative;
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    color: $color-main;
+    padding-left: 36px;
+    padding-right: 56px;
+    height: 44px;
+    background: $color-light;
+    border-radius: 22px;
+    border: none;
+}
+
+.button::after {
+    position: absolute;
+    right: 38px;
+    top: 53%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    content: ">";
+}
+
+.button:hover {
+    
+}
