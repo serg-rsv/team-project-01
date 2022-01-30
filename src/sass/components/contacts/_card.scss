@@ -1,0 +1,226 @@
+.contacts {
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to top, $color-bg-second 89%, $color-light 89%);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to top, $color-bg-second 74%, $color-light 74%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to top, $color-bg-second 71%, $color-light 71%);
+  }
+}
+
+.card {
+  @media screen and (max-width: 767px) {
+    padding-top: 86px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 119px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 132px;
+  }
+}
+
+.card__item {
+  width: 220px;
+  height: 100%;
+  background: $color-light;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  padding: 43px 21px 43px 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px 32px 50px 31px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 51px 52px 62px 44px;
+    width: 330px;
+  }
+}
+
+.card__location {
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+
+  color: $color-light;
+
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    width: 73px;
+    height: 28px;
+
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.card--color {
+  background: #c2e297;
+  width: 138px;
+}
+
+.card__name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.83;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.card--bottom {
+  margin-bottom: 10px;
+
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 14px;
+  }
+}
+
+.card__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: $color-midle;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
+  &::after {
+    content: '';
+    border-top: 1px solid #e1e1e1;
+
+    display: block;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.card__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  color: $color-second;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.card--border::after {
+  content: '';
+  border-top: 1px solid #e1e1e1;
+
+  display: block;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.card__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  display: block;
+
+  color: $color-midle;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
+  &:hover {
+    color: $color-hover-dark;
+
+    transition: color $function-transition;
+  }
+}
