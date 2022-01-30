@@ -4,8 +4,9 @@
 
 .header {
   & .container {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 50px) {
       display: flex;
+      padding-top: 6px;
     }
     @media screen and (min-width: 768px) {
       align-items: center;
@@ -28,13 +29,14 @@
 }
 
 .header__burger {
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 50px) {
     display: block;
     width: 20px;
     height: 14px;
     margin-left: auto;
+    margin-top: 19px;
+  }
+  @media screen and (min-width: 768px) {
     z-index: 10;
   }
   @media screen and (min-width: 1280px) {
@@ -43,7 +45,8 @@
 }
 
 .header__button {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 50px) {
+    display: none;
   }
   @media screen and (min-width: 768px) {
     display: block;

@@ -98,11 +98,12 @@ body {
   background: #ffb8ca;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 50px) {
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 6px;
   }
 }
 
@@ -133,18 +134,30 @@ body {
   height: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 50px) {
   .header__burger {
     display: block;
     width: 20px;
     height: 14px;
     margin-left: auto;
+    margin-top: 19px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__burger {
     z-index: 10;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header__burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 50px) {
+  .header__button {
     display: none;
   }
 }
@@ -167,7 +180,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 50px) {
   .site-nav {
     display: none;
   }
@@ -248,11 +261,13 @@ body {
           flex-direction: column;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 50px) {
   .hero__buttons {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    z-index: 20;
+    margin-bottom: 160px;
   }
 }
 
@@ -278,11 +293,21 @@ body {
   color: #fff;
 }
 
+@media screen and (min-width: 50px) {
+  .page-title {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-top: 137px;
+    margin-bottom: 19px;
+    z-index: 20;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .page-title {
     font-size: 22px;
     line-height: 1.13;
-    margin-bottom: 20px;
+    margin-top: 0;
   }
 }
 
@@ -302,6 +327,13 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+@media screen and (min-width: 50px) {
+  .page-title--decor {
+    font-size: 48px;
+    line-height: 96.5%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -329,7 +361,7 @@ body {
   line-height: 18px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 50px) {
   .button--products {
     font-size: 8px;
     line-height: 1.25;
@@ -361,7 +393,7 @@ body {
   font-weight: normal;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 50px) {
   .button--about {
     font-size: 8px;
     line-height: 1.25;
@@ -384,14 +416,17 @@ body {
   cursor: pointer;
 }
 
-.hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 50px) {
+  .hero__content {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 28px;
   }
 }
@@ -450,6 +485,13 @@ body {
   position: absolute;
 }
 
+@media screen and (min-width: 50px) {
+  .hero__ellipse {
+    top: 7%;
+    right: -10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__ellipse {
     top: -25%;
@@ -464,9 +506,17 @@ body {
   }
 }
 
-.hero__icecream {
-  bottom: 0;
-  left: 49%;
+@media screen and (min-width: 50px) {
+  .hero__icecream {
+    bottom: 0;
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__icecream {
+    left: 49%;
+  }
 }
 
 .hero__tasty {
@@ -501,9 +551,9 @@ body {
 }
 
 .menu {
-  position: absolute;
+  /* position: absolute;
   right: -150px;
-  top: 0;
+  top: 0; */
   background: #e17992;
   width: 250px;
   height: 100vw;
