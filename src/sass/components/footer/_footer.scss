@@ -94,11 +94,34 @@
     background-color: $color-main;
 }
 
+.button-link {
+    transition-property: transform;
+}
+
+.icon-contact:hover .button-link {
+    transform: rotate(-360deg) scale(1.5);
+}
+
+.button-link:nth-child(1) {
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+
+.button-link:nth-child(2) {
+    transition-property: transform;
+    transition-duration: 2000ms;
+}
+
+.button-link:nth-child(3) {
+    transition-property: transform;
+    transition-duration: 3000ms;
+}
+
 .contact {
     display: flex;
     justify-content: flex-end;
     margin: 46px 0 43px 0;
-    font-family: DM Sans;
+    font-family: $font-main;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -160,6 +183,5 @@
     }
     @media screen and (min-width: 1280px) {
         padding-bottom: 100px;
-        ;
     }
 }
