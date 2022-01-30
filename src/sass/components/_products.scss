@@ -1,3 +1,8 @@
+.products__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .products__properties {
   font-family: Titan One;
   font-style: normal;
@@ -219,67 +224,45 @@
 }
 .modal {
   padding: 10px;
-  width: 280px;
-  height: 485px;
+  width: 500px;
+  height: 600px;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background: #ffb8ca;
-  border-radius: 24px;
-
-  @media (min-width: 768px) {
-    width: 220px;
-    height: 485px;
-    padding: 0;
-  }
-  @media (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
-  }
-}
-.modal__cofee {
-  width: 280px;
-  height: 485px;
-  padding: 10px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background: #f0d1a5;
-  border-radius: 24px;
-  @media (min-width: 768px) {
-    padding: 0;
-    width: 220px;
-    height: 485px;
-  }
-  @media (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
-  }
-}
-.modal__milk {
-  width: 280px;
-  height: 485px;
-  padding: 10px;
-  position: absolute;
-  top: 40%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 24px;
-  background: #c2e297;
+  transition: visibility 250ms linear, opacity 250ms linear;
+  background: rgba(0, 0, 0, 0.2);
+
   @media (min-width: 768px) {
+    width: 500px;
+    height: 600px;
     padding: 0;
-    width: 220px;
-    height: 485px;
   }
   @media (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
+    width: 500px;
+    height: 600px;
+    top: 100%;
   }
 }
+.cream {
+  background-image: url(../../images/icecream.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cofee {
+  background-image: url(../../images/cofee.jpg);
+  background-size: cover;
+}
+.milk {
+  background-image: url(../../images/milksheik.jpg);
+  background-size: cover;
+}
+.text-window {
+  padding-top: 380px;
+  color: rgb(13, 24, 56);
+}
+
 .close__btn {
   position: absolute;
   top: 20px;
@@ -292,10 +275,23 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  // background-position: top;
 }
+.close__btn:hover,
+.close__btn:focus {
+  background-color: red;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.card__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  padding-top: 40px;
 }
