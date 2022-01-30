@@ -1,10 +1,10 @@
 <!-- Анатолий Васильев -->
- <div class="container" id="products">
+ <div class="container " id="products">
       <section class="products__section">
         <p class="products__properties">100% natural</p>
 
         <h2 class="product__name">products</h2>
-        "
+        
         <ul class="products__list">
           <li class="products__item products-creams">
             <h3 class="products__title products--cream">ice cream</h3>
@@ -12,7 +12,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et.
             </p>
-            <button type="button" class="products__link">
+            <button type="button" class="products__link menu-toggle js-open-menu" data-modal-open >
               <svg width="15" height="15" >
                 <use
                   class="products__btn"
@@ -20,7 +20,7 @@
                 ></use>
               </svg>
             </button>
-            <!-- <a href="" class="products__link"></a> -->
+           
           </li>
           <li class="products__item poducts-cofee">
             <h3 class="products__title products--cofee">ice coffee</h3>
@@ -28,7 +28,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et.
             </p>
-            <button type="button" class="products__link">
+            <button type="button" class="products__link" data-menu-modal-open  >
               <svg width="15" height="15">
                 <use
                   class="products__btn"
@@ -43,7 +43,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et.
             </p>
-            <button type="button" class="products__link " data-modal-open>
+            <button type="button" class="products__link" data-window-modal-open >
               <svg width="15" height="15" >
                 <use
                   class="products__btn"
@@ -57,22 +57,50 @@
     </div>
     
    <!-- model window -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close__btn " data-modal-close>
+    
+      <div class="modal cream is-hidden" data-modal>
+        <button type="button" class="close__btn " data-modal-close >
           <svg class="icon__cross" width="15px" height="15px">
-            <use href="images/symbol-defs.svg#icon-close-black"></use>
+            <use href="../images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h3 class="products__title">ice cream</h3>
-        <p class="products__subtitle">
-          Мороженое — пищевой продукт-десерт, представляющий собой замороженную
-          в процессе непрерывного взбивания массу, содержащую в основе своей
-          питательные, вкусовые, ароматические и эмульгирующие вещества.
+        <h3 class="card__title">ice cream</h3>
+        <p class="products__subtitle text-window">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quas voluptas. Odit quod nam iusto dolor placeat libero pariatur officia cumque? Non vitae fugit magnam, quo accusantium eos incidunt ut.
         </p>
       </div>
-    </div>
+    
+    <!-- window2 -->
+    
+      <div class="modal cofee is-hidden" data-menu-modal>
+        <button type="button" class="close__btn  " data-menu-modal-close >
+          <svg class="icon__cross" width="15px" height="15px">
+            <use href="../images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <h3 class="card__title">ice coffee</h3>
+        <p class="products__subtitle text-window">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quas voluptas. Odit quod nam iusto dolor placeat libero pariatur officia cumque? Non vitae fugit magnam, quo accusantium eos incidunt ut.
+        </p>
+      </div>
+    
+    <!-- window 3 -->
+    
+      <div class="modal milk is-hidden" data-window-modal >
+        <button type="button" class="close__btn " data-window-modal-close >
+          <svg class="icon__cross" width="15px" height="15px">
+            <use href="../images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <h3 class="card__title">milkshakes</h3>
+        <p class="products__subtitle text-window">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quas voluptas. Odit quod nam iusto dolor placeat libero pariatur officia cumque? Non vitae fugit magnam, quo accusantium eos incidunt ut.
+        </p>
+      </div>
+     
     <script src="./js/model.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/window.js"></script>
   </body>
 </html>
 </html>
