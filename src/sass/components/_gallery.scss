@@ -199,7 +199,7 @@
 
 // ============================ ОВЕРЛЕЙ ========================
 
-$color-gallery-overlay: rgba(255, 184, 202, 0.9);
+$color-overlay-primary: rgba(255, 165, 186, 0.9);
 
 .gallery__image-overlay {
   cursor: pointer;
@@ -209,7 +209,7 @@ $color-gallery-overlay: rgba(255, 184, 202, 0.9);
   width: 100%;
   height: 50%;
 
-  background-color: $color-gallery-overlay;
+  background: linear-gradient(90deg, $color-overlay-primary 10%, rgba(212, 20, 67, 0.9) 100%);
 
   pointer-events: none;
   opacity: 0;
@@ -253,7 +253,7 @@ $color-gallery-overlay: rgba(255, 184, 202, 0.9);
   &:hover {
     background: #fff;
     box-shadow: 4px 4px 3px 0px rgba(34, 60, 80, 0.2);
-    color: $color-gallery-overlay;
+    color: $color-overlay-primary;
   }
 
   @media screen and (min-width: $tablet) {
@@ -274,7 +274,7 @@ $color-gallery-overlay: rgba(255, 184, 202, 0.9);
   height: 26px;
 
   .gallery__button:hover & {
-    fill: $color-gallery-overlay;
+    fill: $color-overlay-primary;
   }
 
   @media screen and (min-width: $tablet) {
@@ -319,6 +319,6 @@ $color-gallery-overlay: rgba(255, 184, 202, 0.9);
   fill: $color-light;
 
   .gallery__button:hover & {
-    fill: $color-gallery-overlay;
+    fill: $color-overlay-primary;
   }
 }
