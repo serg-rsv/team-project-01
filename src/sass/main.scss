@@ -8,12 +8,18 @@
 @import './base/reset';
 @import './base/typographia';
 @import './components/common/container';
+
+
+
+
+
 // Hero header import start
 // Hero header import end
 // Products import start
 @import './components/products';
 // Products import end
 // About import start
+@import './components/about';
 // About import end
 // Advantages import start
 @import './components/advantages/advantages';

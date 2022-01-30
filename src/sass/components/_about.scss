@@ -1,0 +1,119 @@
+.about {
+    background: $color-bg-second;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: $mobile) { 
+        
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        
+    }
+    @media screen and (min-width: $desktop ){
+        
+    }
+}
+
+.about__title { 
+    font-family: $font-fat;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-second;
+    padding-top: 125px;
+}
+
+.about__title-primery {
+    font-family: $font-fat;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-main;
+    padding-bottom: 26px;
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__img {
+    padding-bottom: 46px;
+
+    @media screen and (max-width: $mobile) {
+        picture {
+            width: 90%;
+        }
+        img {
+            width: 90%;
+        }
+    }
+}
+
+.about__textContent {
+    @media screen and (min-width: $tablet) and (max-width: $desktop){
+        width: 340px;
+    }
+    @media screen and (min-width: $desktop){
+        width: 463px;
+    }
+}
+
+.about__text {
+    font-family: $font-main;
+    font-weight: $font-weight;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $color-dark;
+
+    padding-bottom: 47px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about__entry {
+    font-family: $font-main;
+    font-weight: $font-weight;
+    font-size: 12px;
+    line-height: 1.62;  
+    color: $color-midle;
+    padding-bottom: 47px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about__describes {
+    font-family: $font-main;
+    font-weight: $font-weight;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $color-midle;
+}
+
+.about__button {
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    color: $color-main;
+    width: 176px;
+    height: 44px;
+    left: 50px;
+    background: $color-light;
+    border-radius: 22px;
+}
