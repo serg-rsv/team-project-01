@@ -1,0 +1,27 @@
+.slick-dots li {
+  height: 12px;
+  width: 13px;
+}
+
+.slick-dots li button {
+  height: 12px;
+  width: 13px;
+
+  &:before {
+    height: 12px;
+    width: 13px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #d9d9d9;
+    opacity: 1;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+  opacity: 1;
+  background-image: url(../images/svg/home.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
