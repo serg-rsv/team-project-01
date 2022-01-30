@@ -1,9 +1,37 @@
+.contacts {
+  background-image: linear-gradient(to top, $color-bg-second 88%, $color-light 88%);
+}
+
+.card {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .card__item {
   width: 220px;
-  height: 427px;
+  height: 100%;
   background: $color-light;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  padding: 43px 21px 43px 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px 32px 50px 31px;
+  }
 }
 
 .card__location {
@@ -14,18 +42,120 @@
 
   color: $color-light;
 
-  font-family: $font-main;
-  font-style: normal;
-  font-weight: $font-weight;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.83;
   letter-spacing: 0.04em;
-  text-align: center;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    width: 73px;
+    height: 28px;
+
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
 }
 
 .card--color {
   background: #c2e297;
+  width: 138px;
+}
+
+.card__name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+.card__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: $color-midle;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+
+  &::after {
+    content: '';
+    border-top: 1px solid #e1e1e1;
+
+    display: block;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.card__day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+.card__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+
+  color: #ffa5ba;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+.card--border::after {
+  content: '';
+  border-top: 1px solid #e1e1e1;
+
+  display: block;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  display: block;
+
+  color: $color-midle;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  &:hover {
+    color: $color-hover-dark;
+
+    transition: color 250ms linear;
+  }
 }
