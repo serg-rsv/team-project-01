@@ -1,11 +1,31 @@
 .contacts {
-  background-image: linear-gradient(to top, $color-bg-second 88%, $color-light 88%);
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to top, $color-bg-second 89%, $color-light 89%);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to top, $color-bg-second 74%, $color-light 74%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to top, $color-bg-second 71%, $color-light 71%);
+  }
 }
 
 .card {
+  @media screen and (max-width: 767px) {
+    padding-top: 86px;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+
+    padding-top: 119px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 132px;
   }
 }
 
@@ -31,6 +51,11 @@
 
   @media screen and (min-width: $tablet) {
     padding: 50px 32px 50px 31px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 51px 52px 62px 44px;
+    width: 330px;
   }
 }
 
@@ -61,6 +86,10 @@
 
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .card--color {
@@ -80,6 +109,13 @@
     font-size: 14px;
     line-height: 1.85;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+
+    margin-bottom: 14px;
+  }
 }
 
 .card__text {
@@ -94,6 +130,11 @@
     line-height: 1.64;
   }
 
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
   &::after {
     content: '';
     border-top: 1px solid #e1e1e1;
@@ -102,6 +143,16 @@
 
     margin-top: 25px;
     margin-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -121,11 +172,16 @@
   font-size: 12px;
   line-height: 1.83;
 
-  color: #ffa5ba;
+  color: $color-second;
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.85;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -137,6 +193,16 @@
 
   margin-top: 25px;
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .card__link {
@@ -153,9 +219,14 @@
     line-height: 1.85;
   }
 
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
   &:hover {
     color: $color-hover-dark;
 
-    transition: color 250ms linear;
+    transition: color $function-transition;
   }
 }
