@@ -2,34 +2,46 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import './utils/variables';
 
+@import './utils/variables';
+@import './utils/hidden';
 @import './base/reset';
 @import './base/typographia';
-
 @import './components/common/container';
+@import './components/common/button';
 
 // Hero header import start
-
+// Hero header import start
+@import './components/header';
+@import './components/site-nav';
+@import './components/header-button';
+@import './components/hero';
 // Hero header import end
 // Products import start
-
+@import './components/products';
 // Products import end
 // About import start
-
+@import './components/about';
 // About import end
 // Advantages import start
-
+@import './components/advantages/advantages';
 // Advantages import end
 // Gallery import start
 @import './components/gallery';
 // Gallery import end
 // Customer Reviews import start
+@import './lib/slick-theme';
+@import './components/customer-reviews/slide';
+@import './components/customer-reviews/slider';
 // Customer Reviews import end
 // Contacts import start
+@import './components/contacts/button';
+@import './components/contacts/card';
 // Contacts import end
 // Footer import start
+@import './components/footer/footer';
 // Footer import end
 // Стили для файла с примером HTML-фрагмента
 @import './components/backdrop';
 @import './example';
+

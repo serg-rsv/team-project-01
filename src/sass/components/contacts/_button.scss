@@ -1,0 +1,72 @@
+.button-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.button {
+  background: #d41342;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: $color-light;
+
+  padding: 0;
+
+  width: 161px;
+  height: 44px;
+
+  border: none;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 191px;
+
+    margin-top: 81px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 198px;
+
+    margin-top: 86px;
+  }
+}
+
+.button-container__button {
+  @media screen and (max-width: 767px) {
+    margin-top: 54px;
+    margin-bottom: 10px;
+  }
+}
+
+.button-container--color {
+  background-color: $color-light;
+  color: $color-main;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 15px;
+  }
+}
+
+.button__icon {
+  @media screen and (max-width: 767px) {
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 13px;
+  }
+}
