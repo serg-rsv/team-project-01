@@ -1,18 +1,14 @@
 $color-main: #d41443; // Лого, заголовки
 $color-second: #ffa5ba; // Текст над заголовком
-
 $color-light: #fff; // Белый текст
 $color-midle: #907e82; // Серый текст
 $color-dark: #000; // Чёрный текст
-
 $color-icon: #fea5bb; // Цвет соц. иконок
 // Цвет при ховере кнопок
 $color-hover-dark: #c7133e;
 $color-hover-light: #ecebeb;
-
 $color-bg-prime: #ffb8ca; // Бэкграунд карточки и секции герой
 $color-bg-second: #fff5f6; // Бэкграунд секций
-
 $font-main: 'DM Sans', sans-serif; // Основной текст страницы
 $font-fat: 'Titan One', cursive; // Текст заголовков, жирный
 $font-size: 16px;
@@ -22,3 +18,4 @@ $font-weight: 500;
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
+$function-transition: 250ms ease;
