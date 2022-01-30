@@ -1,9 +1,59 @@
-.advantages {
-    display: flex;
-    margin-left: 20px;
-}
-
-.advantages__title {
-    color: rgba(212, 20, 67, 1);
-    ;
-}
+    .advantages__section {
+        background-color: $color-bg-second;
+    }
+    
+    .advantages {
+        // display: flex;
+        margin-left: 10px;
+        margin-right: 60px;
+        flex-direction: row;
+        padding-top: 39px;
+        padding-bottom: 97px;
+    }
+    
+    .advantages__icon1::before {
+        content: url(/images/advant1.png);
+        position: relative;
+        width: 33px;
+        height: 50px;
+        bottom: 16px;
+    }
+    
+    .advantages__icon2::before {
+        content: url(/images/advant2.png);
+        position: relative;
+        width: 50px;
+        height: 50px;
+        bottom: 16px;
+    }
+    
+    .advantages__icon3::before {
+        content: url(/images/advant3.png);
+        position: relative;
+        width: 44px;
+        height: 50px;
+        bottom: 16px;
+    }
+    
+    .advantages__title {
+        color: $color-main;
+        font-family: $font-fat;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+        padding-bottom: 15px;
+    }
+    
+    .advantages__text {
+        font-family: $font-main;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.66;
+        color: $color-dark;
+        font-weight: bold;
+    }
+    
+    .advantages__item {
+        margin-bottom: 65px;
+    }
