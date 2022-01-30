@@ -750,20 +750,20 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .about {
     background: #fff5f6;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .about {
     background: url("../images/img_about/about_milk_desktop@1x.png") no-repeat bottom center #fff5f6;
     background-size: contain;
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
     background: url("../images/img_about/about_milk_desktop@2x.png") no-repeat bottom center #fff5f6;
     background-size: contain;
@@ -831,7 +831,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .about__textContent {
     width: 340px;
   }
@@ -855,6 +855,22 @@ body {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .about__text {
+    font-size: 14px;
+    line-height: 1.76;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+
 .about__entry {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
@@ -865,6 +881,14 @@ body {
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .about__entry {
+    font-size: 14px;
+    line-height: 1.76;
+    padding-bottom: 62px;
+  }
 }
 
 .about__describes {

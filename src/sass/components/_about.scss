@@ -9,10 +9,10 @@
             background-size: contain;
         }
     }
-    @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
         background: $color-bg-second;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: $desktop){
         background: url('../images/img_about/about_milk_desktop@1x.png') no-repeat bottom center $color-bg-second;
         background-size: contain;
         @media (-webkit-min-device-pixel-ratio: 2) { 
@@ -69,10 +69,10 @@
 }
 
 .about__textContent {
-    @media screen and (min-width: $tablet) and (max-width: 1279px){
+    @media screen and (min-width: $tablet) and (max-width: $desktop){
         width: 340px;
     }
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: $desktop){
         width: 463px;
     }
 }
@@ -83,11 +83,21 @@
     font-size: 12px;
     line-height: 1.62;
     color: $color-dark;
-
     padding-bottom: 47px;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.76;
+        padding-bottom: 35px;
+    }
+
+    @media screen and (min-width: $desktop){
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
 }
 
 .about__entry {
@@ -100,6 +110,19 @@
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    @media screen and (max-width: $tablet) { 
+
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.76;
+        padding-bottom: 62px;
+    }
+
+    @media screen and (min-width: $desktop){
+
+    }
+
 }
 
 .about__describes {
