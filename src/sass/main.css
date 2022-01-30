@@ -108,6 +108,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 37px;
     padding-bottom: 15px;
   }
@@ -360,6 +363,58 @@ body {
 .hero__foodtracks {
   top: 16%;
   right: 15px;
+}
+
+.menu {
+  background: #e17992;
+  width: 250px;
+  height: 100vw;
+}
+
+.menu__container {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  margin-bottom: 23px;
+}
+
+.menu__button {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.button--size {
+  width: 202px;
+}
+
+.menu__site-nav-list .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__site-nav-item {
+  margin-bottom: 22px;
+}
+
+.menu__site-nav-item:last-child {
+  margin-bottom: 0;
 }
 
 .gallery {
