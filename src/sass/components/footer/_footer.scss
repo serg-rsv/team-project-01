@@ -15,7 +15,7 @@
 
 .text-one,
 .text-two {
-    font-family: Titan One;
+    font-family: $font-fat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -134,7 +134,7 @@
 .footer-year-text {
     padding: 22px 0;
     max-width: 145px;
-    font-family: DM Sans;
+    font-family: $font-main;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
