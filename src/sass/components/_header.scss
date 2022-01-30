@@ -1,0 +1,26 @@
+.header {
+  background: $color-bg-prime;
+}
+
+.header {
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 84px;
+  }
+}
+
+.header__link {
+  display: block;
+}
+
+.header__logo {
+  width: 199px;
+  height: 50px;
+}
+
+.header__button {
+  display: inline-flex;
+  align-items: center;
+}
