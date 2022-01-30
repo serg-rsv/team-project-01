@@ -131,6 +131,48 @@
     }
 }
 
+.phone:hover,
+.phone:focus {
+    background-color: #fff;
+    animation: 1500ms ease 0s normal none 1 running pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleX(1) scaleY(1);
+    }
+    10% {
+        transform: scaleX(0.85) scaleY(0.85);
+    }
+    20% {
+        transform: scaleX(1) scaleY(1);
+    }
+    30% {
+        transform: scaleX(0.85) scaleY(0.85);
+    }
+    40% {
+        transform: scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: scaleX(0.85) scaleY(0.85);
+    }
+    60% {
+        transform: scaleX(1) scaleY(1);
+    }
+    70% {
+        transform: scaleX(0.85) scaleY(0.85);
+    }
+    80% {
+        transform: scaleX(1) scaleY(1);
+    }
+    90% {
+        transform: scaleX(0.85) scaleY(0.85);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
 .button-link {
     transition-property: transform;
 }
