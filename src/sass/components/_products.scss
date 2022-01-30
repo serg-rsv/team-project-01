@@ -19,6 +19,15 @@
     line-height: 1.13;
   }
 }
+.products__section {
+  padding-top: 121px;
+  @media (min-width: 768px) {
+    padding-top: 122px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 127px;
+  }
+}
 .product__name {
   font-family: Titan One;
   font-style: normal;
