@@ -1345,14 +1345,10 @@ body {
   }
 }
 
-.button-container--color {
-  background-color: #fff;
-  color: #d41443;
-}
-
-@media screen and (min-width: 768px) {
-  .button-container--color {
-    margin-left: 14px;
+@media screen and (min-width: 1200px) {
+  .button {
+    width: 198px;
+    margin-top: 86px;
   }
 }
 
@@ -1360,6 +1356,17 @@ body {
   .button-container__button {
     margin-top: 54px;
     margin-bottom: 10px;
+  }
+}
+
+.button-container--color {
+  background-color: #fff;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .button-container--color {
+    margin-left: 15px;
   }
 }
 
@@ -1491,8 +1498,6 @@ body {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.83;
-  letter-spacing: 0.04em;
-  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1506,6 +1511,16 @@ body {
   .card__name {
     font-size: 16px;
     line-height: 1.87;
+  }
+}
+
+.card--bottom {
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 1200px) {
+  .card--bottom {
     margin-bottom: 14px;
   }
 }
@@ -1550,19 +1565,6 @@ body {
   .card__text::after {
     margin-top: 32px;
     margin-bottom: 32px;
-  }
-}
-
-.card__day {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-}
-
-@media screen and (min-width: 768px) {
-  .card__day {
-    font-size: 14px;
-    line-height: 1.85;
   }
 }
 
@@ -1624,7 +1626,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .card__link {
     font-size: 16px;
     line-height: 1.81;
