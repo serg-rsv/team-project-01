@@ -1,6 +1,12 @@
 .site-nav {
-  display: inline-flex;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .site-nav__list {

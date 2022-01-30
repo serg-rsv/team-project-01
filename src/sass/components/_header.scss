@@ -4,10 +4,17 @@
 
 .header {
   & .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 37px;
-    padding-bottom: 84px;
+    @media screen and (min-width: 480px) {
+      display: flex;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 37px;
+      padding-bottom: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      justify-content: space-between;
+      padding-bottom: 84px;
+    }
   }
 }
 
@@ -20,7 +27,28 @@
   height: 50px;
 }
 
+.header__burger {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 20px;
+    height: 14px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
 .header__button {
-  display: inline-flex;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+    align-items: center;
+  }
 }
