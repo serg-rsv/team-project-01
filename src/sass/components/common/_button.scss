@@ -1,4 +1,4 @@
-.button {
+.button__main {
     position: relative;
     font-family: $font-main;
     font-weight: bold;
@@ -14,7 +14,7 @@
     border: none;
 }
 
-.button::after {
+.button__main::after {
     position: absolute;
     right: 38px;
     top: 53%;
@@ -23,6 +23,7 @@
     content: ">";
 }
 
-.button:hover {
-    
+.button__main:hover {
+    background: $color-hover-dark;
+    color: $color-light;
 }

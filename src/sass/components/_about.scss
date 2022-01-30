@@ -2,10 +2,10 @@
     width: 100%;
     text-align: center;
     @media screen and (max-width: $tablet) { 
-        background: url('../img_about/about_milk_mobile@1x.png') no-repeat bottom 44px center $color-bg-second;
+        background: url('../images/img_about/about_milk_mobile@1x.png') no-repeat bottom 44px center $color-bg-second;
         background-size: contain;
         @media (-webkit-min-device-pixel-ratio: 2) { 
-            background:url('../img_about/about_milk_mobile@2x.png') no-repeat bottom 44px center $color-bg-second;
+            background:url('../images/img_about/about_milk_mobile@2x.png') no-repeat bottom 44px center $color-bg-second;
             background-size: contain;
         }
     }
@@ -13,10 +13,10 @@
         background: $color-bg-second;
     }
     @media screen and (min-width: 1200px){
-        background: url('../img_about/about_milk_desktop@1x.png') no-repeat bottom center $color-bg-second;
+        background: url('../images/img_about/about_milk_desktop@1x.png') no-repeat bottom center $color-bg-second;
         background-size: contain;
         @media (-webkit-min-device-pixel-ratio: 2) { 
-            background:url('../img_about/about_milk_desktop@2x.png') no-repeat bottom center $color-bg-second;
+            background:url('../images/img_about/about_milk_desktop@2x.png') no-repeat bottom center $color-bg-second;
             background-size: contain;
         }
     }
@@ -111,7 +111,17 @@
 }
 
 .about__button {
-    
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    color: $color-main;
+    width: 176px;
+    height: 44px;
+    left: 50px;
+    background: $color-light;
+    border-radius: 22px;
 }
 
 // modal window popup
@@ -141,11 +151,11 @@
 }
 
 .popup__area {
- position: absolute;
- width: 100%;
- height: 100%;
- top: 0;
- left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .popup__body {
@@ -177,12 +187,12 @@
 }
 
 .popup__title {
-font-size: 40px;
-margin: 0px 0px 1em 0px;
-color: $color-main;
+    font-size: 40px;
+    margin: 0px 0px 1em 0px;
+    color: $color-main;
 }
 
 .popup__text {
- color: $color-midle;
- text-align: left;
+    color: $color-midle;
+    text-align: left;
 }

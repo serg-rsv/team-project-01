@@ -87,7 +87,7 @@ body {
   border: none;
 }
 
-.button {
+.button__main {
   position: relative;
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
@@ -103,7 +103,7 @@ body {
   border: none;
 }
 
-.button::after {
+.button__main::after {
   position: absolute;
   right: 38px;
   top: 53%;
@@ -111,6 +111,11 @@ body {
           transform: translateY(-50%);
   font-size: 16px;
   content: ">";
+}
+
+.button__main:hover {
+  background: #c7133e;
+  color: #fff;
 }
 
 .header {
@@ -733,14 +738,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .about {
-    background: url("../img_about/about_milk_mobile@1x.png") no-repeat bottom 44px center #fff5f6;
+    background: url("../images/img_about/about_milk_mobile@1x.png") no-repeat bottom 44px center #fff5f6;
     background-size: contain;
   }
 }
 
 @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
-    background: url("../img_about/about_milk_mobile@2x.png") no-repeat bottom 44px center #fff5f6;
+    background: url("../images/img_about/about_milk_mobile@2x.png") no-repeat bottom 44px center #fff5f6;
     background-size: contain;
   }
 }
@@ -753,14 +758,14 @@ body {
 
 @media screen and (min-width: 1200px) {
   .about {
-    background: url("../img_about/about_milk_desktop@1x.png") no-repeat bottom center #fff5f6;
+    background: url("../images/img_about/about_milk_desktop@1x.png") no-repeat bottom center #fff5f6;
     background-size: contain;
   }
 }
 
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
-    background: url("../img_about/about_milk_desktop@2x.png") no-repeat bottom center #fff5f6;
+    background: url("../images/img_about/about_milk_desktop@2x.png") no-repeat bottom center #fff5f6;
     background-size: contain;
   }
 }
@@ -868,6 +873,20 @@ body {
   font-size: 12px;
   line-height: 1.62;
   color: #907e82;
+}
+
+.about__button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #d41443;
+  width: 176px;
+  height: 44px;
+  left: 50px;
+  background: #fff;
+  border-radius: 22px;
 }
 
 .popup {
@@ -1560,7 +1579,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .button {
     width: 198px;
     margin-top: 86px;
@@ -1611,7 +1630,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff5f6), color-stop(71%, #fff));
     background-image: linear-gradient(to top, #fff5f6 71%, #fff 71%);
@@ -1636,7 +1655,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card {
     padding-top: 132px;
   }
@@ -1671,7 +1690,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__item {
     padding: 51px 52px 62px 44px;
     width: 330px;
@@ -1734,7 +1753,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__name {
     font-size: 16px;
     line-height: 1.87;
@@ -1746,7 +1765,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card--bottom {
     margin-bottom: 14px;
   }
@@ -1766,7 +1785,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__text {
     font-size: 16px;
     line-height: 1.81;
@@ -1788,7 +1807,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__text::after {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -1809,7 +1828,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__time {
     font-size: 16px;
     line-height: 1.87;
@@ -1831,7 +1850,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card--border::after {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -1853,7 +1872,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .card__link {
     font-size: 16px;
     line-height: 1.81;
@@ -2237,31 +2256,5 @@ body {
   .footer-position {
     padding-bottom: 100px;
   }
-}
-
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
