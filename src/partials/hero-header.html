@@ -48,17 +48,8 @@
         <button class="button button--about" type="button">How it’s made?</button>
       </a>
     </div>
-
-    <div class="hero__image">
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            images/img-for-hero-header-tablet/milk.png    124w,
-            images/img-for-hero-header-tablet/milk_x2.png 248w
-          "
-          sizes="124px"
-        />
+    <div class="hero__content">
+      <picture class="hero__image hero__image--hide">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -67,6 +58,14 @@
           "
           sizes="188px"
         />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/img-for-hero-header-tablet/milk.png    124w,
+            images/img-for-hero-header-tablet/milk_x2.png 248w
+          "
+          sizes="124px"
+        />
         <img src="images/img-for-hero-header-desktop/milk.png" alt="Молоко в кувшине с надписью" />
       </picture>
       <div class="hero__descr">
@@ -74,20 +73,29 @@
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <div>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="images/img-for-hero-header-desktop/arrow-right.svg 24w"
+            sizes="24px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/img-for-hero-header-tablet/arrow-right.svg 18w"
+            sizes="18px"
+          />
           <img src="images/img-for-hero-header-desktop/arrow-right.svg" alt="Кнопка для модалки" />
-        </div>
+        </picture>
       </div>
     </div>
-
     <picture class="hero__ellipse img-pos">
       <source
-        media="(min-width: 480px)"
+        media="(min-width: 1280px)"
         srcset="
-          images/img-for-hero-header-mobile/circle.png    284w,
-          images/img-for-hero-header-mobile/circle_x2.png 568w
+          images/img-for-hero-header-desktop/circle.png     538w,
+          images/img-for-hero-header-desktop/circle_x2.png 1076w
         "
-        sizes="284px"
+        sizes="538px"
       />
       <source
         media="(min-width: 768px)"
@@ -98,24 +106,24 @@
         sizes="324px"
       />
       <source
-        media="(min-width: 1280px)"
+        media="(min-width: 480px)"
         srcset="
-          images/img-for-hero-header-desktop/circle.png     538w,
-          images/img-for-hero-header-desktop/circle_x2.png 1076w
+          images/img-for-hero-header-mobile/circle.png    284w,
+          images/img-for-hero-header-mobile/circle_x2.png 568w
         "
-        sizes="538px"
+        sizes="284px"
       />
       <img src="images/img-for-hero-header-desktop/circle.png" alt="Розовый круг" />
     </picture>
 
     <picture class="hero__icecream img-pos">
       <source
-        media="(min-width: 480px)"
+        media="(min-width: 1280px)"
         srcset="
-          images/img-for-hero-header-mobile/icecream.png    171w,
-          images/img-for-hero-header-mobile/icecream_x2.png 342w
+          images/img-for-hero-header-desktop/icecream.png    236w,
+          images/img-for-hero-header-desktop/icecream_x2.png 472w
         "
-        sizes="171px"
+        sizes="236px"
       />
       <source
         media="(min-width: 768px)"
@@ -126,25 +134,17 @@
         sizes="143px"
       />
       <source
-        media="(min-width: 1280px)"
+        media="(min-width: 480px)"
         srcset="
-          images/img-for-hero-header-desktop/icecream.png    236w,
-          images/img-for-hero-header-desktop/icecream_x2.png 472w
+          images/img-for-hero-header-mobile/icecream.png    171w,
+          images/img-for-hero-header-mobile/icecream_x2.png 342w
         "
-        sizes="236px"
+        sizes="171px"
       />
       <img src="images/img-for-hero-header-desktop/icecream.png" alt="Красивое вкусное мороженое" />
     </picture>
 
-    <picture class="hero__tasty img-pos">
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          images/img-for-hero-header-tablet/tasty.png    168w,
-          images/img-for-hero-header-tablet/tasty_x2.png 336w
-        "
-        sizes="168px"
-      />
+    <picture class="hero__tasty img-pos hero__image--hide">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -153,18 +153,18 @@
         "
         sizes="293px"
       />
-      <img src="images/img-for-hero-header-desktop/tasty.png" alt="Восхищенная девушка" />
-    </picture>
-
-    <picture class="hero__cafes img-pos">
       <source
         media="(min-width: 768px)"
         srcset="
-          images/img-for-hero-header-tablet/cafes.png    43w,
-          images/img-for-hero-header-tablet/cafes_x2.png 86w
+          images/img-for-hero-header-tablet/tasty.png    168w,
+          images/img-for-hero-header-tablet/tasty_x2.png 336w
         "
-        sizes="43px"
+        sizes="168px"
       />
+      <img src="images/img-for-hero-header-desktop/tasty.png" alt="Восхищенная девушка" />
+    </picture>
+
+    <picture class="hero__cafes img-pos hero__image--hide">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -173,18 +173,18 @@
         "
         sizes="72px"
       />
-      <img src="images/img-for-hero-header-desktop/cafes.png" alt="Колличество кофешек" />
-    </picture>
-
-    <picture class="hero__foodtracks img-pos">
       <source
         media="(min-width: 768px)"
         srcset="
-          images/img-for-hero-header-tablet/foodtrucks.png    43w,
-          images/img-for-hero-header-tablet/foodtrucks_x2.png 86w
+          images/img-for-hero-header-tablet/cafes.png    43w,
+          images/img-for-hero-header-tablet/cafes_x2.png 86w
         "
         sizes="43px"
       />
+      <img src="images/img-for-hero-header-desktop/cafes.png" alt="Колличество кофешек" />
+    </picture>
+
+    <picture class="hero__foodtracks img-pos hero__image--hide">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -192,6 +192,14 @@
           images/img-for-hero-header-desktop/foodtrucks_x2.png 144w
         "
         sizes="72px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/foodtrucks.png    43w,
+          images/img-for-hero-header-tablet/foodtrucks_x2.png 86w
+        "
+        sizes="43px"
       />
       <img src="images/img-for-hero-header-desktop/foodtrucks.png" alt="Колличество фуд-траков" />
     </picture>

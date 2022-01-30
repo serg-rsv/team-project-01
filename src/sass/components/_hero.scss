@@ -11,24 +11,44 @@
 }
 
 .hero__buttons {
-  display: inline-flex;
-  padding-left: 70px;
-  margin-bottom: 56px;
+  @media screen and (min-width: 480px) {
+    display: inline-flex;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 70px;
+    margin-bottom: 56px;
+  }
 }
 
 .page-title {
   font-family: $font-fat;
   font-style: normal;
   font-weight: normal;
-  font-size: 38px;
-  line-height: 1.16;
+
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $color-light;
 
-  padding-left: 70px;
-  margin-bottom: 25px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.13;
+
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+
+    padding-top: 83px;
+    padding-left: 70px;
+    margin-bottom: 25px;
+  }
 
   &--decor {
     font-size: 58px;
@@ -38,6 +58,16 @@
     text-transform: uppercase;
 
     color: $color-main;
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 38px;
+      line-height: 1.16;
+    }
   }
 }
 
@@ -52,10 +82,26 @@
   font-size: 14px;
   line-height: 18px;
 
-  width: 104px;
-  height: 40px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
 
-  margin-right: 15px;
+    width: 62px;
+    height: 24px;
+
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+
+    width: 104px;
+    height: 40px;
+
+    margin-right: 15px;
+  }
 
   &:focus,
   &:hover {
@@ -69,11 +115,23 @@
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
 
-  width: 138px;
-  height: 40px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+
+    width: 83px;
+    height: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+
+    width: 138px;
+    height: 40px;
+  }
 
   &:focus,
   &:hover {
@@ -82,28 +140,61 @@
   }
 }
 
+.hero__content {
+  display: flex;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
+
 .hero__image {
-  display: inline-flex;
-  padding-left: 37px;
-  padding-bottom: 45px;
+  &--hide {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 }
 
 .hero__descr {
-  width: 200px;
-  margin-left: 30px;
-  padding-top: 55px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    padding-top: 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    margin-left: 30px;
+    padding-top: 55px;
+  }
 }
 
 .hero__text {
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.42;
 
   color: $color-light;
 
-  margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.5;
+
+    margin-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.42;
+
+    margin-bottom: 20px;
+  }
 }
 
 .img-pos {
@@ -111,8 +202,16 @@
 }
 
 .hero__ellipse {
-  top: -7.3em;
-  left: 38%;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    top: -25%;
+    left: 38%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -3.3em;
+    left: 38%;
+  }
 }
 
 .hero__icecream {
@@ -126,11 +225,25 @@
 }
 
 .hero__cafes {
-  top: -12px;
-  right: 15px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    top: 0;
+    right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 10%;
+  }
 }
 
 .hero__foodtracks {
-  top: 16%;
-  right: 15px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    top: 18%;
+    right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 27%;
+  }
 }
