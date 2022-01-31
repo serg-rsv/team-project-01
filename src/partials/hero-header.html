@@ -28,9 +28,7 @@
       <use href="images/img-for-hero-header-tablet/burger.svg#burger"></use>
     </svg>
 
-    <div class="header__button">
-      <button class="button__main button--header" type="button">Buy now</button>
-    </div>
+    <button class="button__main button__main--header" type="button">Buy now</button>
   </div>
 </header>
 <!-- Герой -->
@@ -41,12 +39,10 @@
     </h1>
 
     <div class="hero__buttons animate__animated animate__slideInDown">
-      <a class="hero__link" href="#">
-        <button class="button button--products" type="button">Products</button>
-      </a>
-      <a class="hero__link" href="#">
-        <button class="button button--about" type="button">How it’s made?</button>
-      </a>
+      <div class="header__wrapper">
+        <a class="button__main hide button__main--hero" href="#">Products</a>
+        <a class="button__main hide button__main--hero" href="#">How it’s made?</a>
+      </div>
     </div>
     <div class="hero__content">
       <picture class="hero__image hero__image--hide animate__animated animate__slideInLeft">
@@ -73,7 +69,7 @@
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="button__modal-icon menu-toggle js-open-menu" data-modal-open>
+        <button type="button" class="button__modal-icon" data-modal-open>
           <svg class="hero__btn">
             <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-arrow-right2"></use>
           </svg>
@@ -98,7 +94,7 @@
         sizes="324px"
       />
       <source
-        media="(min-width: 480px)"
+        media="(min-width: 50px)"
         srcset="
           images/img-for-hero-header-mobile/circle.png    284w,
           images/img-for-hero-header-mobile/circle_x2.png 568w
@@ -126,7 +122,7 @@
         sizes="143px"
       />
       <source
-        media="(min-width: 480px)"
+        media="(min-width: 50px)"
         srcset="
           images/img-for-hero-header-mobile/icecream.png    171w,
           images/img-for-hero-header-mobile/icecream_x2.png 342w
@@ -200,7 +196,7 @@
   </div>
 </section>
 <!-- Меню для мобилки -->
-<section class="menu">
+<section class="visually-hidden menu">
   <div class="menu__container">
     <svg class="menu__icon">
       <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
