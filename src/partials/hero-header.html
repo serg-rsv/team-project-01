@@ -9,6 +9,7 @@
         alt="Логотип магазина"
       />
     </a>
+
     <nav class="site-nav">
       <ul class="site-nav__list">
         <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
@@ -22,18 +23,24 @@
         <li class="site-nav__item"><a class="site-nav__link" href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <svg class="header__burger">
+      <use href="images/img-for-hero-header-tablet/burger.svg#burger"></use>
+    </svg>
+
     <div class="header__button">
-      <button class="button button--header" type="button">Buy now</button>
+      <button class="button__main button--header" type="button">Buy now</button>
     </div>
   </div>
 </header>
 <!-- Герой -->
 <section class="hero">
   <div class="container">
-    <h1 class="page-title">
+    <h1 class="page-title animate__animated animate__slideInDown">
       ice cream<br />made with<br /><span class="page-title--decor">passion</span>
     </h1>
-    <div class="hero__buttons">
+
+    <div class="hero__buttons animate__animated animate__slideInDown">
       <a class="hero__link" href="#">
         <button class="button button--products" type="button">Products</button>
       </a>
@@ -41,30 +48,178 @@
         <button class="button button--about" type="button">How it’s made?</button>
       </a>
     </div>
-    <div class="hero__image">
-      <img src="images/img-for-hero-header-desktop/milk.png" alt="Молоко в кувшине с надписью" />
-      <div class="hero__descr">
+    <div class="hero__content">
+      <picture class="hero__image hero__image--hide animate__animated animate__slideInLeft">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            images/img-for-hero-header-desktop/milk.png    188w,
+            images/img-for-hero-header-desktop/milk_x2.png 376w
+          "
+          sizes="188px"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/img-for-hero-header-tablet/milk.png    124w,
+            images/img-for-hero-header-tablet/milk_x2.png 248w
+          "
+          sizes="124px"
+        />
+        <img src="images/img-for-hero-header-desktop/milk.png" alt="Молоко в кувшине с надписью" />
+      </picture>
+      <div class="hero__descr animate__animated animate__slideInRight">
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <img src="images/img-for-hero-header-desktop/arrow-right.svg" alt="Кнопка для модалки" />
+        <button type="button" class="button__modal-icon menu-toggle js-open-menu" data-modal-open>
+          <svg class="hero__btn">
+            <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
       </div>
     </div>
-    <div class="hero__ellipse img-pos">
+    <picture class="hero__ellipse img-pos animate__animated animate__slideInDown">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/img-for-hero-header-desktop/circle.png     538w,
+          images/img-for-hero-header-desktop/circle_x2.png 1076w
+        "
+        sizes="538px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/circle.png    324w,
+          images/img-for-hero-header-tablet/circle_x2.png 648w
+        "
+        sizes="324px"
+      />
+      <source
+        media="(min-width: 480px)"
+        srcset="
+          images/img-for-hero-header-mobile/circle.png    284w,
+          images/img-for-hero-header-mobile/circle_x2.png 568w
+        "
+        sizes="284px"
+      />
       <img src="images/img-for-hero-header-desktop/circle.png" alt="Розовый круг" />
-    </div>
-    <div class="hero__icecream img-pos">
+    </picture>
+
+    <picture class="hero__icecream img-pos animate__animated animate__slideInUp">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/img-for-hero-header-desktop/icecream.png    236w,
+          images/img-for-hero-header-desktop/icecream_x2.png 472w
+        "
+        sizes="236px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/icecream.png    143w,
+          images/img-for-hero-header-tablet/icecream_x2.png 286w
+        "
+        sizes="143px"
+      />
+      <source
+        media="(min-width: 480px)"
+        srcset="
+          images/img-for-hero-header-mobile/icecream.png    171w,
+          images/img-for-hero-header-mobile/icecream_x2.png 342w
+        "
+        sizes="171px"
+      />
       <img src="images/img-for-hero-header-desktop/icecream.png" alt="Красивое вкусное мороженое" />
-    </div>
-    <div class="hero__tasty img-pos">
+    </picture>
+
+    <picture
+      class="hero__tasty img-pos hero__image--hide animate__animated animate__rotateInUpRight"
+    >
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/img-for-hero-header-desktop/tasty.png    293w,
+          images/img-for-hero-header-desktop/tasty_x2.png 586w
+        "
+        sizes="293px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/tasty.png    168w,
+          images/img-for-hero-header-tablet/tasty_x2.png 336w
+        "
+        sizes="168px"
+      />
       <img src="images/img-for-hero-header-desktop/tasty.png" alt="Восхищенная девушка" />
-    </div>
-    <div class="hero__cafes img-pos">
+    </picture>
+
+    <picture class="hero__cafes img-pos hero__image--hide animate__animated animate__swing">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/img-for-hero-header-desktop/cafes.png     72w,
+          images/img-for-hero-header-desktop/cafes_x2.png 144w
+        "
+        sizes="72px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/cafes.png    43w,
+          images/img-for-hero-header-tablet/cafes_x2.png 86w
+        "
+        sizes="43px"
+      />
       <img src="images/img-for-hero-header-desktop/cafes.png" alt="Колличество кофешек" />
-    </div>
-    <div class="hero__foodtracks img-pos">
+    </picture>
+
+    <picture class="hero__foodtracks img-pos hero__image--hide animate__animated animate__swing">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          images/img-for-hero-header-desktop/foodtrucks.png     72w,
+          images/img-for-hero-header-desktop/foodtrucks_x2.png 144w
+        "
+        sizes="72px"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/img-for-hero-header-tablet/foodtrucks.png    43w,
+          images/img-for-hero-header-tablet/foodtrucks_x2.png 86w
+        "
+        sizes="43px"
+      />
       <img src="images/img-for-hero-header-desktop/foodtrucks.png" alt="Колличество фуд-траков" />
+    </picture>
+  </div>
+</section>
+<!-- Меню для мобилки -->
+<section class="menu">
+  <div class="menu__container">
+    <svg class="menu__icon">
+      <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
+    </svg>
+    <div class="menu__button">
+      <button class="button__main button--header button--size" type="button">Buy now</button>
     </div>
   </div>
+  <nav class="menu__site-nav">
+    <ul class="menu__site-nav-list">
+      <li class="menu__site-nav-item"><a class="site-nav__link" href="#">Home</a></li>
+      <li class="menu__site-nav-item"><a class="site-nav__link" href="#">About us</a></li>
+      <li class="menu__site-nav-item">
+        <a class="site-nav__link" href="#">How it’s made?</a>
+      </li>
+      <li class="menu__site-nav-item">
+        <a class="site-nav__link" href="#">Our products</a>
+      </li>
+      <li class="menu__site-nav-item"><a class="site-nav__link" href="#">Contact</a></li>
+    </ul>
+  </nav>
 </section>
