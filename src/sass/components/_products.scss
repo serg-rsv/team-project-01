@@ -159,12 +159,72 @@
 }
 .products--cream::before {
   background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic1.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tel/2x/pic1@2x.png);
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/1x/tabl.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/2x/tabl@2x.png);
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/1x/desk.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/2x/desk@2x.png);
+  }
 }
 .products--cofee::before {
   background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic2.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tel/2x/pic2@2x.png);
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/1x/tabl1.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/2x/tabl1@2x.png);
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/1x/desk1.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/2x/desk1@2x.png);
+  }
 }
 .products--milk::before {
   background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic3.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tel/2x/pic3@2x.png);
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/1x/tabl2.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/tablet/2x/tabl2@2x.png);
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/1x/desk2.png);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/PRODUCTS_IMAGES/products/desktop/2x/desk2@2x.png);
+  }
 }
 .products__title::after {
   content: '';
