@@ -13,6 +13,13 @@
   background: $color-light;
   border-radius: 22px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background: $color-hover-dark;
+    color: $color-light;
+    cursor: pointer;
+  }
 }
 
 .button__main::after {
@@ -22,9 +29,4 @@
   transform: translateY(-50%);
   font-size: 16px;
   content: '>';
-}
-
-.button__main:hover {
-  background: $color-hover-dark;
-  color: $color-light;
 }
