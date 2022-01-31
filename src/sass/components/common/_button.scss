@@ -1,5 +1,6 @@
 // light button
-.button__main {position: relative;
+.button__main {
+    position: relative;
     font-family: $font-main;
     font-weight: bold;
     font-size: 14px;
@@ -12,13 +13,10 @@
     background: $color-light;
     border-radius: 22px;
     border: none;
-    @media screen and (max-width: $tablet) { 
-
-    }
+  
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         font-size: 16px;
     }
-
     @media screen and (min-width: $desktop){
         font-size: 16px;
     }
