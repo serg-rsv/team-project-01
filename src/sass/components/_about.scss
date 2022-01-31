@@ -69,11 +69,23 @@
 }
 
 .about__textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a {
+        padding-left: 20px;
+    }
+    @media screen and (max-width: $tablet) { 
+        padding-bottom: 39px;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desktop){
         width: 340px;
+        padding-bottom: 66px;
     }
     @media screen and (min-width: $desktop){
         width: 463px;
+        padding-bottom: 146px;
     }
 }
 
@@ -106,7 +118,7 @@
     font-size: 12px;
     line-height: 1.62;  
     color: $color-midle;
-    padding-bottom: 47px;
+    padding-bottom: 17px;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
@@ -134,17 +146,7 @@
 }
 
 .about__button {
-    font-family: $font-main;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    color: $color-main;
-    width: 176px;
-    height: 44px;
-    left: 50px;
-    background: $color-light;
-    border-radius: 22px;
+
 }
 
 // modal window popup
@@ -192,12 +194,25 @@
 .popup__content {
     background-color: $color-bg-prime;
     color: #000000;
-    max-width: 800px;
+    max-width: 300px;
+    border-radius: 6px;
+    border: #fff;
     padding: 30px;
     position: relative;
     transition: all 0.8s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    @media screen and (max-width: $tablet) { 
+
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        max-width: 400px;
+    }
+
+    @media screen and (min-width: $desktop){
+        max-width: 440px;
+
+    }
 }
 
 .popup__close {
@@ -210,7 +225,7 @@
 }
 
 .popup__title {
-    font-size: 40px;
+    font-size: 28px;
     margin: 0px 0px 1em 0px;
     color: $color-main;
 }
@@ -218,4 +233,8 @@
 .popup__text {
     color: $color-midle;
     text-align: left;
+}
+
+.popup__img {
+    
 }
