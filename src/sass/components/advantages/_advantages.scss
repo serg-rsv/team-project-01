@@ -109,8 +109,10 @@
     }
     
     .advantages__item:not(:last-child) {
+        margin-bottom: 38px;
         @media screen and (min-width: $tablet) {
             margin-right: 60px;
+            margin-bottom: 0;
         }
         @media screen and (min-width: $desktop) {
             margin-right: 30px;
