@@ -151,6 +151,7 @@
   &:hover .gallery__button,
   &:focus .gallery__button {
     opacity: 1;
+    transform: translate(0, 200%);
   }
 
   @media screen and (min-width: $tablet) {
@@ -225,6 +226,7 @@
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform $animationDuration $animationTimeFunction;
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
   background-color: black;
