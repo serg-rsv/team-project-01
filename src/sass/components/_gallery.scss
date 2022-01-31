@@ -151,7 +151,7 @@
   &:hover .gallery__button,
   &:focus .gallery__button {
     opacity: 1;
-    transform: translate(0, 200%);
+    transform: translate(-50%, -50%) translateY(0) scale(1);
   }
 
   @media screen and (min-width: $tablet) {
@@ -225,10 +225,10 @@
   position: absolute;
   top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform $animationDuration $animationTimeFunction;
+  transform: translate(-50%, -50%) translateY(112.5%) scale(0);
+  transition: opacity $animationDuration cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    transform $animationDuration $animationTimeFunction 0.2s;
   opacity: 0;
-  transition: opacity 0.35s ease-in-out;
   background-color: black;
   width: 60%;
   height: auto;
@@ -271,6 +271,8 @@
   }
 }
 
+// ====================ИКОНКА КНОПКИ ГАЛЛЕРЕИ================================
+
 .gallery__svg {
   fill: #fff;
   width: 26px;
@@ -289,6 +291,8 @@
   }
 }
 
+// =======================================ТЕКСТ КНОПКИ ГАЛЛЕРЕИ=============================
+
 .gallery__text-tablet {
   display: none;
   padding-right: 5px;
@@ -306,6 +310,8 @@
   }
 }
 
+// =================================СТРЕЛКА КНОПКИ ГАЛЛЕРЕИ=========================
+
 .gallery__arrow {
   line-height: 0;
   display: none;
@@ -316,7 +322,7 @@
   }
 }
 
-.gallery_arrow-svg {
+.gallery__arrow-svg {
   width: 22px;
   height: auto;
   fill: $color-light;
@@ -325,3 +331,57 @@
     fill: $color-main;
   }
 }
+
+// ============================== БЭКДРОП ГАЛЛЕРЕИ =====================================
+
+.gallery__backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.gallery__backdrop.is-hidden {
+  transition: all $animationDuration $animationTimeFunction;
+  pointer-events: none;
+}
+
+// ================================= МОДАЛЬНОЕ ОКНО ГАЛЛЕРЕИ ==========================
+
+.gallery__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform $animationDuration $animationTimeFunction;
+
+  .gallery__backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0) rotate(135deg);
+
+    transition: transform $animationDuration $animationTimeFunction;
+  }
+}
+
+.modal__menu {
+  width: calc(100vw - 30px);
+  height: auto;
+
+  @media screen and (max-width: $mobile) {
+    min-width: 320px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 620px;
+  }
+
+  @media screen and (orientation: landscape) {
+    width: calc(100vh * 0.7);
+  }
+}
+
+@import './common/close-button';
