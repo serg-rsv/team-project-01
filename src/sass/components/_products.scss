@@ -20,9 +20,7 @@
   }
 }
 .products__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
   padding-top: 121px;
   @media (min-width: 768px) {
     padding-top: 122px;
@@ -30,6 +28,11 @@
   @media (min-width: 1280px) {
     padding-top: 127px;
   }
+}
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .product__name {
   font-family: Titan One;
