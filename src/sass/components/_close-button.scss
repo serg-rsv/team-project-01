@@ -1,0 +1,33 @@
+@import './common/animation';
+
+.close-button {
+  line-height: 0;
+  position: absolute;
+  display: block;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  top: 8px;
+  right: 8px;
+}
+
+.close-button__icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $color-hover-dark;
+  background-color: $color-bg-second;
+  fill: $color-hover-dark;
+
+  &:hover {
+    box-shadow: $shadowItem;
+    animation-name: scalesChange;
+    animation-duration: $animationDuration;
+    animation-timing-function: $animationTimeFunction;
+    animation-iteration-count: 1;
+    fill: $color-bg-second;
+    background-color: $color-hover-dark;
+  }
+}
