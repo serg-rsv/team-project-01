@@ -133,7 +133,7 @@
 
 .phone:hover,
 .phone:focus {
-    background-color: #fff;
+    color: $color-main;
     animation: 1500ms ease 0s normal none 1 running pulse;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .phone {
-    color: $color-main;
+    color: $color-second;
     margin-left: 5px;
 }
 
