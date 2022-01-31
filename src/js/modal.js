@@ -1,15 +1,15 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[modal-open-data]'),
-    closeModalBtn: document.querySelector('[modal-close-data]'),
-    modal: document.querySelector('[modal-data]'),
+    openModalBtn: document.querySelector('.close-button'),
+    closeModalBtn: document.querySelector('.gallery__button'),
+    modal: document.querySelector('.gallery__backdrop.is-hidden'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
   }
 })();
