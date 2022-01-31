@@ -29,18 +29,18 @@
     </svg>
 
     <div class="header__button">
-      <button class="button button--header" type="button">Buy now</button>
+      <button class="button__main button--header" type="button">Buy now</button>
     </div>
   </div>
 </header>
 <!-- Герой -->
 <section class="hero">
   <div class="container">
-    <h1 class="page-title">
+    <h1 class="page-title animate__animated animate__slideInDown">
       ice cream<br />made with<br /><span class="page-title--decor">passion</span>
     </h1>
 
-    <div class="hero__buttons">
+    <div class="hero__buttons animate__animated animate__slideInDown">
       <a class="hero__link" href="#">
         <button class="button button--products" type="button">Products</button>
       </a>
@@ -49,7 +49,7 @@
       </a>
     </div>
     <div class="hero__content">
-      <picture class="hero__image hero__image--hide">
+      <picture class="hero__image hero__image--hide animate__animated animate__slideInLeft">
         <source
           media="(min-width: 1280px)"
           srcset="
@@ -68,30 +68,19 @@
         />
         <img src="images/img-for-hero-header-desktop/milk.png" alt="Молоко в кувшине с надписью" />
       </picture>
-      <div class="hero__descr">
+      <div class="hero__descr animate__animated animate__slideInRight">
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="images/img-for-hero-header-desktop/arrow-right.svg 24w"
-            sizes="24px"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="images/img-for-hero-header-tablet/arrow-right.svg 18w"
-            sizes="18px"
-          />
-          <img
-            src="images/img-for-hero-header-desktop/arrow-right.svg"
-            alt="Стрелка вправо в кружочке"
-          />
-        </picture>
+        <button type="button" class="button__modal-icon menu-toggle js-open-menu" data-modal-open>
+          <svg class="hero__btn">
+            <use href="images/symbol-defs.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
       </div>
     </div>
-    <picture class="hero__ellipse img-pos">
+    <picture class="hero__ellipse img-pos animate__animated animate__slideInDown">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -119,7 +108,7 @@
       <img src="images/img-for-hero-header-desktop/circle.png" alt="Розовый круг" />
     </picture>
 
-    <picture class="hero__icecream img-pos">
+    <picture class="hero__icecream img-pos animate__animated animate__slideInUp">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -147,7 +136,9 @@
       <img src="images/img-for-hero-header-desktop/icecream.png" alt="Красивое вкусное мороженое" />
     </picture>
 
-    <picture class="hero__tasty img-pos hero__image--hide">
+    <picture
+      class="hero__tasty img-pos hero__image--hide animate__animated animate__rotateInUpRight"
+    >
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -167,7 +158,7 @@
       <img src="images/img-for-hero-header-desktop/tasty.png" alt="Восхищенная девушка" />
     </picture>
 
-    <picture class="hero__cafes img-pos hero__image--hide">
+    <picture class="hero__cafes img-pos hero__image--hide animate__animated animate__swing">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -187,7 +178,7 @@
       <img src="images/img-for-hero-header-desktop/cafes.png" alt="Колличество кофешек" />
     </picture>
 
-    <picture class="hero__foodtracks img-pos hero__image--hide">
+    <picture class="hero__foodtracks img-pos hero__image--hide animate__animated animate__swing">
       <source
         media="(min-width: 1280px)"
         srcset="
@@ -215,7 +206,7 @@
       <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
     </svg>
     <div class="menu__button">
-      <button class="button button--header button--size" type="button">Buy now</button>
+      <button class="button__main button--header button--size" type="button">Buy now</button>
     </div>
   </div>
   <nav class="menu__site-nav">
