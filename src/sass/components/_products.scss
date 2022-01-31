@@ -1,8 +1,3 @@
-.products__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .products__properties {
   font-family: Titan One;
   font-style: normal;
@@ -25,6 +20,9 @@
   }
 }
 .products__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 121px;
   @media (min-width: 768px) {
     padding-top: 122px;
@@ -157,13 +155,13 @@
   }
 }
 .products--cream::before {
-  background-image: url(../../images/products/tel/1x/pic1.png);
+  background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic1.png);
 }
 .products--cofee::before {
-  background-image: url(../../images/products/tel/1x/pic2.png);
+  background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic2.png);
 }
 .products--milk::before {
-  background-image: url(../../images/products/tel/1x/pic3.png);
+  background-image: url(../images/PRODUCTS_IMAGES/products/tel/1x/pic3.png);
 }
 .products__title::after {
   content: '';
@@ -172,7 +170,7 @@
   height: 6px;
   top: 200px;
   left: 127px;
-  background-image: url(../../images/grup.png);
+  background-image: url(../images/PRODUCTS_IMAGES/grup.png);
   @media (min-width: 768px) {
     left: 95px;
     top: 215px;
@@ -246,16 +244,16 @@
   }
 }
 .cream {
-  background-image: url(../../images/icecream.jpg.jpg);
+  background-image: url(../images/PRODUCTS_IMAGES/icecream.jpg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .cofee {
-  background-image: url(../../images/cofee.jpg);
+  background-image: url(../images/PRODUCTS_IMAGES/cofee.jpg);
   background-size: cover;
 }
 .milk {
-  background-image: url(../../images/milksheik.jpg);
+  background-image: url(../images/PRODUCTS_IMAGES/milksheik.jpg);
   background-size: cover;
 }
 .text-window {
