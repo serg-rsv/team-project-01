@@ -27,6 +27,8 @@
 
   border: none;
 
+  cursor: pointer;
+
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +57,11 @@
 .button-container--color {
   background-color: $color-light;
   color: $color-main;
+
+  &:hover {
+    background-color: $color-hover-light;
+    transition: $function-transition;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-left: 15px;
