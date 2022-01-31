@@ -1,4 +1,17 @@
 .menu {
+  @media screen and (min-width: 50px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #e17992;
+    width: 250px;
+    height: 100%;
+    visibility: hidden;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
   position: absolute;
   right: 0;
   top: 0;
