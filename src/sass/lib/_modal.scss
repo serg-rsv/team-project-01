@@ -13,6 +13,13 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
+
+  &--gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      linear-gradient(-45deg, #ee775270, #e73c7e70, #23a6d570, #23d5ab70);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+  }
 }
 
 /* Стили для модальных окон */
@@ -40,6 +47,41 @@
   border-radius: 3px;
   background-color: #fff;
   transition: 0.3s all;
+
+  // МОДИФИКАТОР МОДАЛЬНОГО ОКНА ДЛЯ ГАЛЛЕРЕИ НАЧИНАЕТСЯ ЗДЕСЬ
+
+  &--gallery {
+    width: calc(100vw - 30px);
+    height: auto;
+    max-width: 620px;
+
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%) scale(0) rotate(135deg);
+    transition: all $animationDuration $animationTimeFunction;
+
+    &.active {
+      transform: translate(-50%, -50%) scale(1);
+
+      transition: all $animationDuration $animationTimeFunction;
+    }
+
+    @media screen and (min-width: $mobile) {
+      width: 320px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 620px;
+    }
+
+    @media screen and (orientation: landscape) {
+      width: calc(100vh * 0.7);
+    }
+  }
+
+  // МОДИФИКАТОР МОДАЛЬНОГО ОКНА ДЛЯ ГАЛЛЕРЕИ ЗАКАНЧИВАЕТСЯ ЗДЕСЬ
 }
 
 /* Стили для активных классов подложки и окна */
