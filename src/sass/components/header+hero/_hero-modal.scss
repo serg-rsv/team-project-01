@@ -44,12 +44,9 @@
 }
 
 .modal.shop {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font-fat;
   font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
+  line-height: 1.15;
   text-transform: uppercase;
 
   display: flex;
@@ -62,6 +59,10 @@
   background-image: url(../images/img-for-hero-header-desktop/icecream-shop.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  & .close-button {
+    margin-bottom: 0;
+  }
 }
 
 .shop__subtitle {
@@ -73,8 +74,4 @@
 
   color: $color-light;
   margin-top: 350px;
-}
-
-.close-button.menu__icon.close-button--move {
-  margin-bottom: 0;
 }
