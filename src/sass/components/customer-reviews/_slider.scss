@@ -1,3 +1,15 @@
+.customer-reviews__slider {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 620px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 926px;
+  }
+}
+
 .slick-dots li {
   height: 12px;
   width: 13px;
