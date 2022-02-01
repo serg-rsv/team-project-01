@@ -285,32 +285,7 @@
     margin-bottom: 50px;
   }
 }
-.modal {
-  max-width: 250px;
-  padding: 10px;
 
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 24px;
-  transition: visibility 250ms linear, opacity 250ms linear;
-  background: rgba(0, 0, 0, 0.2);
-
-  @media (min-width: 768px) {
-    min-width: 500px;
-    width: 500px;
-    height: 600px;
-    padding: 0;
-    top: 100%;
-    height: 600px;
-  }
-  @media (min-width: 1280px) {
-    width: 500px;
-    height: 600px;
-    top: 140%;
-  }
-}
 .cream {
   background-image: url(../images/PRODUCTS_IMAGES/icecream.jpg.jpg);
   background-repeat: no-repeat;
@@ -332,7 +307,7 @@
   }
 }
 
-.close__btn {
+.close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,8 +324,8 @@
   cursor: pointer;
 }
 
-.close__btn:hover,
-.close__btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   background-color: red;
 }
 

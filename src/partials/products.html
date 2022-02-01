@@ -1,18 +1,18 @@
 <!-- Анатолий Васильев -->
 <section class="products__section" id="products">
   <div class="container products-container">
-    <p class="products__properties">100% natural</p>
+    <p class="products__properties animate__animated animate__slideInDown">100% natural</p>
 
-    <h2 class="product__name">products</h2>
+    <h2 class="product__name animate__animated animate__slideInDown">products</h2>
 
     <ul class="products__list">
       <li class="products__item products-creams">
-        <h3 class="products__title products--cream">ice cream</h3>
-        <p class="products__subtitle">
+        <h3 class="products__title products--cream animate__animated animate__slideInDown">ice cream</h3>
+        <p class="products__subtitle animate__animated animate__slideInDown">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et.
         </p>
-        <button type="button" class="products__link menu-toggle js-open-menu" data-modal-open>
+        <button type="button" class="products__link js-open-modal animate__animated animate__slideInDown" data-modal="cream">
           <svg width="15" height="15">
             <use
               class="products__btn"
@@ -22,12 +22,12 @@
         </button>
       </li>
       <li class="products__item poducts-cofee">
-        <h3 class="products__title products--cofee">ice coffee</h3>
-        <p class="products__subtitle">
+        <h3 class="products__title products--cofee animate__animated animate__slideInDown">ice coffee</h3>
+        <p class="products__subtitle animate__animated animate__slideInDown">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et.
         </p>
-        <button type="button" class="products__link" data-menu-modal-open>
+        <button type="button" class="products__link js-open-modal animate__animated animate__slideInDown" data-modal="cofee">
           <svg width="15" height="15">
             <use
               class="products__btn"
@@ -37,12 +37,12 @@
         </button>
       </li>
       <li class="products__item products-milkshakes">
-        <h3 class="products__title products--milk">milkshakes</h3>
-        <p class="products__subtitle">
+        <h3 class="products__title products--milk animate__animated animate__slideInDown">milkshakes</h3>
+        <p class="products__subtitle animate__animated animate__slideInDown">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et.
         </p>
-        <button type="button" class="products__link" data-window-modal-open>
+        <button type="button" class="products__link js-open-modal animate__animated animate__slideInDown" data-modal="milkshake">
           <svg width="15" height="15">
             <use
               class="products__btn"
@@ -56,11 +56,13 @@
 
   <!-- model window -->
 
-  <div class="modal cream is-hidden" data-modal>
-    <button type="button" class="close__btn" data-modal-close>
-      <svg class="icon__cross" width="15px" height="15px">
-        <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-close-black"></use>
-      </svg>
+  <div class="modal cream is-hidden" data-modal="cream">
+    <button type="button" class="close-btn js-modal-close">
+       <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px"
+                aria-label="Закрытие меню">
+                <path
+                    d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+                </svg>
     </button>
     <h3 class="card__title">ice cream</h3>
     <p class="products__subtitle text-window">
@@ -72,11 +74,13 @@
 
   <!-- window2 -->
 
-  <div class="modal cofee is-hidden" data-menu-modal>
-    <button type="button" class="close__btn" data-menu-modal-close>
-      <svg class="icon__cross" width="15px" height="15px">
-        <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-close-black"></use>
-      </svg>
+  <div class="modal cofee is-hidden" data-modal="cofee">
+    <button type="button" class="close-btn js-modal-close">
+       <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px"
+                aria-label="Закрытие меню">
+                <path
+                    d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+                </svg>
     </button>
     <h3 class="card__title">ice coffee</h3>
     <p class="products__subtitle text-window">
@@ -88,11 +92,13 @@
 
   <!-- window 3 -->
 
-  <div class="modal milk is-hidden" data-window-modal>
-    <button type="button" class="close__btn" data-window-modal-close>
-      <svg class="icon__cross" width="15px" height="15px">
-        <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-close-black"></use>
-      </svg>
+  <div class="modal milk is-hidden" data-modal="milkshake">
+    <button type="button" class="close-btn js-modal-close">
+       <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px"
+                aria-label="Закрытие меню">
+                <path
+                    d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+                </svg>
     </button>
     <h3 class="card__title">milkshakes</h3>
     <p class="products__subtitle text-window">
