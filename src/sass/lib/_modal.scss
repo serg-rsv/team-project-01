@@ -15,8 +15,8 @@
   transition: 0.3s all;
 
   &--gallery {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      linear-gradient(-45deg, #ee775270, #e73c7e70, #23a6d570, #23d5ab70);
+    background: linear-gradient(#00000040, #00000040),
+      linear-gradient(-45deg, #e7d63c70 10%, #23a6d570 50%, #e9327870 70%, #23d5ab70);
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
   }
