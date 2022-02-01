@@ -202,16 +202,14 @@
 <!-- Меню для мобилки -->
 <div class="is-hidden menu" data-menu>
   <div class="menu__container">
-    <svg
-      class="menu__icon"
-      aria-controls="menu-container"
-      aria-label="Close mobile menu"
-      data-menu-btn-close
-    >
-      <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
-    </svg>
+    <button type="button" class="close-button menu__icon" data-menu-btn-close>
+      <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Закрытие меню">
+        <path
+          d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+      </svg>
+    </button>
     <div class="menu__button">
-      <button class="button__main" type="button">Buy now</button>
+      <button class="button__main button--size" type="button">Buy now</button>
     </div>
   </div>
   <nav class="menu__site-nav">
@@ -228,3 +226,5 @@
     </ul>
   </nav>
 </div>
+
+
