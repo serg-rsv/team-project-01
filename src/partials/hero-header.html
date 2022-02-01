@@ -24,7 +24,12 @@
       </ul>
     </nav>
 
-    <svg class="header__burger">
+    <svg
+      class="header__burger"
+      aria-controls="menu-container"
+      aria-label="Open mobile menu"
+      data-menu-btn-open
+    >
       <use href="images/img-for-hero-header-tablet/burger.svg#burger"></use>
     </svg>
 
@@ -196,9 +201,14 @@
   </div>
 </section>
 <!-- Меню для мобилки -->
-<section class="visually-hidden menu">
+<section class="is-hidden menu" data-menu>
   <div class="menu__container">
-    <svg class="menu__icon">
+    <svg
+      class="menu__icon"
+      aria-controls="menu-container"
+      aria-label="Close mobile menu"
+      data-menu-btn-close
+    >
       <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
     </svg>
     <div class="menu__button">
