@@ -4,7 +4,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.16;
-  color: #ffa5ba;
+  color: $color-second;
   margin-bottom: 15px;
   text-align: -webkit-center;
   text-transform: uppercase;
@@ -106,7 +106,6 @@
   }
 }
 .products__list {
-  padding-bottom: 98px;
   @media (min-width: 768px) {
     display: flex;
     margin-top: -20px;
@@ -138,7 +137,11 @@
     margin-top: 30px;
   }
 }
-
+.products__item:not(:last-child) {
+  @media (max-width: 767px) {
+    margin-bottom: 130px;
+  }
+}
 .products__wraper {
   padding-top: 161px;
 }
@@ -253,9 +256,6 @@
   fill: $color-light;
 }
 
-.products__item:not(:last-child) {
-  margin-bottom: 130px;
-}
 .poducts-cofee {
   background-color: #f0d1a5;
 }
