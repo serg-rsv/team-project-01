@@ -4,7 +4,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.16;
-  color: #ffa5ba;
+  color: $color-second;
   margin-bottom: 15px;
   text-align: -webkit-center;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
   text-align: -webkit-center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $color-main;
   margin-bottom: 144px;
 
   @media (min-width: 768px) {
@@ -70,7 +70,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-light;
   @media (min-width: 768px) {
     padding-left: 23px;
     padding-right: 23px;
@@ -90,7 +90,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $color-light;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -106,7 +106,6 @@
   }
 }
 .products__list {
-  padding-bottom: 98px;
   @media (min-width: 768px) {
     display: flex;
     margin-top: -20px;
@@ -120,7 +119,7 @@
 .products__item {
   width: 280px;
   height: 485px;
-  background: #ffb8ca;
+  background: $color-bg-prime;
   border-radius: 24px;
 
   @media (min-width: 768px) {
@@ -138,7 +137,11 @@
     margin-top: 30px;
   }
 }
-
+.products__item:not(:last-child) {
+  @media (max-width: 767px) {
+    margin-bottom: 130px;
+  }
+}
 .products__wraper {
   padding-top: 161px;
 }
@@ -246,16 +249,13 @@
   }
 }
 .products__btn {
-  fill: #d41443;
+  fill: $color-main;
 }
 .products__link:hover .products__btn,
 .products__link:focus .products__btn {
-  fill: #ffffff;
+  fill: $color-light;
 }
 
-.products__item:not(:last-child) {
-  margin-bottom: 130px;
-}
 .poducts-cofee {
   background-color: #f0d1a5;
 }
@@ -272,7 +272,7 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: #d41443;
+    background-color: $color-main;
   }
   @media (min-width: 768px) {
     margin-left: 90px;
@@ -285,32 +285,7 @@
     margin-bottom: 50px;
   }
 }
-.modal {
-  max-width: 250px;
-  padding: 10px;
 
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 24px;
-  transition: visibility 250ms linear, opacity 250ms linear;
-  background: rgba(0, 0, 0, 0.2);
-
-  @media (min-width: 768px) {
-    min-width: 500px;
-    width: 500px;
-    height: 600px;
-    padding: 0;
-    top: 100%;
-    height: 600px;
-  }
-  @media (min-width: 1280px) {
-    width: 500px;
-    height: 600px;
-    top: 140%;
-  }
-}
 .cream {
   background-image: url(../images/PRODUCTS_IMAGES/icecream.jpg.jpg);
   background-repeat: no-repeat;
@@ -328,19 +303,19 @@
   padding-top: 90px;
   color: rgb(13, 24, 56);
   @media (min-width: 768px) {
-    padding-top: 380px;
+    padding-top: 250px;
   }
 }
 
-.close__btn {
+.close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
@@ -349,9 +324,9 @@
   cursor: pointer;
 }
 
-.close__btn:hover,
-.close__btn:focus {
-  background-color: red;
+.close-btn:hover,
+.close-btn:focus {
+  background-color: $color-main;
 }
 
 .is-hidden {
@@ -369,5 +344,16 @@
   padding-top: 90px;
   @media (min-width: 768px) {
     padding-top: 40px;
+  }
+}
+.modal-window.modal-window {
+  max-width: 280px;
+  border-radius: 24px;
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    height: 500px;
+  }
+  @media (min-width: 1280px) {
   }
 }
