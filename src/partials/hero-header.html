@@ -36,9 +36,10 @@
       <use href="images/img-for-hero-header-tablet/burger.svg#burger"></use>
     </svg>
 
-    <button class="button__main button__main--header" type="button" aria-label="Choose your tasty" >Buy now</button>
+    <button class="button__main button__main--header js-open-modal" type="button" data-modal="form" aria-label="Choose your tasty" >Buy now</button>
   </div>
 </header>
+
 <!-- Герой -->
 <section class="hero">
   <div class="container">
@@ -202,6 +203,7 @@
     </picture>
   </div>
 </section>
+
 <!-- Меню для мобилки -->
 <div class="is-hidden menu" data-menu>
   <div class="menu__container">
@@ -229,14 +231,15 @@
     </ul>
   </nav>
 </div>
+
 <!-- Модальное окно -->
 <div class="modal shop" data-modal="shop" >
   <button type="button" class="close-button menu__icon js-modal-close" aria-label="close button" >
-      <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Close menu">
-        <path
-          d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
-      </svg>
-    </button>
+    <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Close menu">
+      <path
+        d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+    </svg>
+   </button>
   <h3 class="shop__title">welcome<br> in our shop</h3>
 
   <p class="shop__subtitle">
@@ -244,4 +247,64 @@
     iusto dolor placeat libero pariatur officia cumque? Non vitae fugit magnam, quo accusantium
     eos incidunt ut.
   </p>
+</div>
+
+<!-- Форма покупки товара -->
+<div class="modal" data-modal="form">
+  <button type="button" class="close-button menu__icon js-modal-close" aria-label="close button" >
+    <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Close menu">
+      <path
+        d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+    </svg>
+   </button>
+
+  <form class="form js-speaker-form">
+    <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+
+    <label class="form-field">
+      <span class="form-field__text">Имя</span>
+      <input class="form-field__input" type="text" name="name" />
+      <!-- <svg class="form-field__icon">
+        <use href="./images/icons.svg#person-icon"></use>
+      </svg> -->
+    </label>
+
+    <label class="form-field">
+      <span class="form-field__text">Телефон</span>
+      <input class="form-field__input" type="tel" name="tel" />
+      <!-- <svg class="form-field__icon">
+        <use href="./images/icons.svg#phone-icon"></use>
+      </svg> -->
+    </label>
+
+    <label class="form-field">
+      <span class="form-field__text">Почта</span>
+      <input class="form-field__input" type="email" name="email" />
+      <!-- <svg class="form-field__icon">
+        <use href="./images/icons.svg#email-icon"></use>
+      </svg> -->
+    </label>
+
+    <label class="comment-field">
+      <span class="comment-field__text">Комментарий</span>
+      <textarea
+        class="comment-field__comment"
+        name="comment"
+        id="comment"
+        rows="6"
+        placeholder="Введите текст"
+      ></textarea>
+    </label>
+
+    <label class="agree">
+      <input class="agree__input" type="checkbox" name="agree" />
+      <span class="agree__icon"></span>
+      <span class="agree__text"
+        >Соглашаюсь с рассылкой и принимаю
+        <a href="#" class="agree__link">Условия договора</a></span
+      >
+    </label>
+
+    <button type="submit" class="button form__button">Отправить</button>
+  </form>
 </div>
