@@ -11,10 +11,17 @@
 @import './components/common/button';
 
 // Hero header import start
-@import './components/header';
-@import './components/site-nav';
-@import './components/hero';
-@import './components/menu';
+@import './components/header+hero/header';
+@import './components/header+hero/header-nav';
+@import './components/header+hero/header-burger';
+@import './components/header+hero/header-button';
+@import './components/header+hero/hero';
+@import './components/header+hero/hero-title';
+@import './components/header+hero/hero-buttons';
+@import './components/header+hero/hero-content';
+@import './components/header+hero/hero-modal';
+@import './components/header+hero/hero-images';
+@import './components/header+hero/menu';
 // Hero header import end
 // Products import start
 @import './components/products';
@@ -40,3 +47,4 @@
 // Footer import start
 @import './components/footer/footer';
 // Footer import end
+@import './lib/modal';

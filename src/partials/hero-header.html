@@ -6,13 +6,13 @@
       <img
         class="header__logo"
         src="images/img-for-hero-header-desktop/logo.png"
-        alt="Логотип магазина"
+        alt="Logo Icecream-shop"
       />
     </a>
 
     <nav class="site-nav">
       <ul class="site-nav__list">
-        <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#" >Home</a></li>
         <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
         <li class="site-nav__item">
           <a class="site-nav__link" href="#">How it’s made?</a>
@@ -24,11 +24,16 @@
       </ul>
     </nav>
 
-    <svg class="header__burger">
+    <svg
+      class="header__burger"
+      aria-controls="menu-container"
+      aria-label="Open mobile menu"
+      data-menu-btn-open
+    >
       <use href="images/img-for-hero-header-tablet/burger.svg#burger"></use>
     </svg>
 
-    <button class="button__main button__main--header" type="button">Buy now</button>
+    <button class="button__main button__main--header" type="button" aria-label="Choose your tasty" >Buy now</button>
   </div>
 </header>
 <!-- Герой -->
@@ -37,13 +42,12 @@
     <h1 class="page-title animate__animated animate__slideInDown">
       ice cream<br />made with<br /><span class="page-title--decor">passion</span>
     </h1>
-
-    <div class="hero__buttons animate__animated animate__slideInDown">
-      <div class="header__wrapper">
-        <a class="button__main hide button__main--hero" href="#">Products</a>
-        <a class="button__main hide button__main--hero" href="#">How it’s made?</a>
-      </div>
+    
+    <div class="header__wrapper animate__animated animate__slideInDown">
+      <a class="button__main hide button__main--hero" href="#">Products</a>
+      <a class="button__main hide button__main--hero" href="#">How it’s made?</a>
     </div>
+    
     <div class="hero__content">
       <picture class="hero__image hero__image--hide animate__animated animate__slideInLeft">
         <source
@@ -62,14 +66,14 @@
           "
           sizes="124px"
         />
-        <img src="images/img-for-hero-header-desktop/milk.png" alt="Молоко в кувшине с надписью" />
+        <img src="images/img-for-hero-header-desktop/milk.png" alt="Milk in the glass" />
       </picture>
       <div class="hero__descr animate__animated animate__slideInRight">
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="button__modal-icon" data-modal-open>
+        <button type="button" class="button__modal-icon js-open-modal" data-modal="#shop" aria-label="Button for open modal">
           <svg class="hero__btn">
             <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-arrow-right2"></use>
           </svg>
@@ -101,7 +105,7 @@
         "
         sizes="284px"
       />
-      <img src="images/img-for-hero-header-desktop/circle.png" alt="Розовый круг" />
+      <img src="images/img-for-hero-header-desktop/circle.png" alt="Pink allipse" />
     </picture>
 
     <picture class="hero__icecream img-pos animate__animated animate__slideInUp">
@@ -129,7 +133,7 @@
         "
         sizes="171px"
       />
-      <img src="images/img-for-hero-header-desktop/icecream.png" alt="Красивое вкусное мороженое" />
+      <img src="images/img-for-hero-header-desktop/icecream.png" alt="Big tasty icecream" />
     </picture>
 
     <picture
@@ -151,7 +155,7 @@
         "
         sizes="168px"
       />
-      <img src="images/img-for-hero-header-desktop/tasty.png" alt="Восхищенная девушка" />
+      <img src="images/img-for-hero-header-desktop/tasty.png" alt="Delighted girl" />
     </picture>
 
     <picture class="hero__cafes img-pos hero__image--hide animate__animated animate__swing">
@@ -171,7 +175,7 @@
         "
         sizes="43px"
       />
-      <img src="images/img-for-hero-header-desktop/cafes.png" alt="Колличество кофешек" />
+      <img src="images/img-for-hero-header-desktop/cafes.png" alt="Number of cafes" />
     </picture>
 
     <picture class="hero__foodtracks img-pos hero__image--hide animate__animated animate__swing">
@@ -191,18 +195,21 @@
         "
         sizes="43px"
       />
-      <img src="images/img-for-hero-header-desktop/foodtrucks.png" alt="Колличество фуд-траков" />
+      <img src="images/img-for-hero-header-desktop/foodtrucks.png" alt="Number of foodtrucks" />
     </picture>
   </div>
 </section>
 <!-- Меню для мобилки -->
-<section class="visually-hidden menu">
+<div class="is-hidden menu" data-menu>
   <div class="menu__container">
-    <svg class="menu__icon">
-      <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
-    </svg>
+    <button type="button" class="close-button menu__icon" aria-label="close button" data-menu-btn-close>
+      <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Close menu">
+        <path
+          d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+      </svg>
+    </button>
     <div class="menu__button">
-      <button class="button__main button--header button--size" type="button">Buy now</button>
+      <button class="button__main button--size" type="button" aria-label="Button for buy">Buy now</button>
     </div>
   </div>
   <nav class="menu__site-nav">
@@ -218,4 +225,22 @@
       <li class="menu__site-nav-item"><a class="site-nav__link" href="#">Contact</a></li>
     </ul>
   </nav>
-</section>
+</div>
+<!-- Модальное окно -->
+<div id="shop" class="popup modal" data-modal="#shop">
+  <a href="#about" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#about" class="popup__close js-modal-close">X</a>
+      <h2 class="popup__title">BUY IN OUR SHOPS</h2>
+      <p class="popup__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis nam aperiam deserunt tenetur
+        officiis unde consequatur obcaecati explicabo minima, dolorem et beatae sit ab molestias voluptas. Officia, amet
+        deleniti!<br>
+      <div class="popup__img">
+        <img src="images/img-for-hero-header-tablet/tasty.png" alt="BUY IN OUR SHOPS">
+      </div>
+      </p>
+    </div>
+  </div>
+</div>

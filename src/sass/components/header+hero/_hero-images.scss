@@ -1,0 +1,61 @@
+.hero__image {
+  &--hide {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.img-pos {
+  position: absolute;
+}
+
+.hero__ellipse {
+  @media screen and (min-width: 50px) {
+    top: 7%;
+    right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    top: -25%;
+    left: 38%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -3.3em;
+    left: 38%;
+  }
+}
+
+.hero__icecream {
+  @media screen and (min-width: 50px) {
+    bottom: 0;
+    left: 35%;
+  }
+  @media screen and (min-width: 768px) {
+    left: 49%;
+  }
+}
+
+.hero__tasty {
+  bottom: 0;
+  right: 15px;
+}
+
+.hero__cafes {
+  @media screen and (min-width: 768px) {
+    top: 0;
+    right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 10%;
+  }
+}
+
+.hero__foodtracks {
+  @media screen and (min-width: 768px) {
+    top: 18%;
+    right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 27%;
+  }
+}
