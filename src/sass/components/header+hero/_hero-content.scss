@@ -1,0 +1,45 @@
+.hero__content {
+  @media screen and (min-width: 50px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
+
+.hero__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+
+  color: $color-light;
+
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.5;
+
+    margin-bottom: 7px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.42;
+
+    margin-bottom: 20px;
+  }
+}
+
+.hero__descr {
+  @media screen and (min-width: 768px) {
+    max-width: 114px;
+    padding-top: 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 200px;
+    margin-left: 30px;
+    padding-top: 55px;
+  }
+}

@@ -42,13 +42,12 @@
     <h1 class="page-title animate__animated animate__slideInDown">
       ice cream<br />made with<br /><span class="page-title--decor">passion</span>
     </h1>
-
-    <div class="hero__buttons animate__animated animate__slideInDown">
-      <div class="header__wrapper">
-        <a class="button__main hide button__main--hero" href="#">Products</a>
-        <a class="button__main hide button__main--hero" href="#">How it’s made?</a>
-      </div>
+    
+    <div class="header__wrapper animate__animated animate__slideInDown">
+      <a class="button__main hide button__main--hero" href="#">Products</a>
+      <a class="button__main hide button__main--hero" href="#">How it’s made?</a>
     </div>
+    
     <div class="hero__content">
       <picture class="hero__image hero__image--hide animate__animated animate__slideInLeft">
         <source
@@ -74,7 +73,7 @@
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="button__modal-icon" data-modal-open>
+        <button type="button" class="button__modal-icon">
           <svg class="hero__btn">
             <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-arrow-right2"></use>
           </svg>
@@ -201,7 +200,7 @@
   </div>
 </section>
 <!-- Меню для мобилки -->
-<section class="is-hidden menu" data-menu>
+<div class="is-hidden menu" data-menu>
   <div class="menu__container">
     <svg
       class="menu__icon"
@@ -212,7 +211,7 @@
       <use href="images/img-for-hero-header-tablet/close.svg#close"></use>
     </svg>
     <div class="menu__button">
-      <button class="button__main button--header button--size" type="button">Buy now</button>
+      <button class="button__main" type="button">Buy now</button>
     </div>
   </div>
   <nav class="menu__site-nav">
@@ -228,4 +227,4 @@
       <li class="menu__site-nav-item"><a class="site-nav__link" href="#">Contact</a></li>
     </ul>
   </nav>
-</section>
+</div>
