@@ -2,6 +2,9 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+html {
+  scroll-behavior: smooth;
+}
 
 @import './utils/variables';
 @import './utils/hidden';
