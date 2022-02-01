@@ -42,3 +42,39 @@
     height: 10px;
   }
 }
+
+.modal.shop {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  color: $color-main;
+  background: $color-bg-prime;
+  border: 1px solid $color-hover-dark;
+
+  background-image: url(../images/img-for-hero-header-desktop/icecream-shop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shop__subtitle {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $color-light;
+  margin-top: 350px;
+}
+
+.close-button.menu__icon.close-button--move {
+  margin-bottom: 0;
+}
