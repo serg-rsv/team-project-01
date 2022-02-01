@@ -1,0 +1,44 @@
+.button__modal-icon {
+  position: relative;
+
+  border-radius: 50%;
+
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $color-main;
+  }
+
+  &:hover .hero__btn,
+  &:focus .hero__btn {
+    fill: $color-light;
+  }
+
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  fill: $color-main;
+
+  @media (min-width: 768px) {
+    width: 6px;
+    height: 6px;
+  }
+  @media (min-width: 1280px) {
+    width: 10px;
+    height: 10px;
+  }
+}
