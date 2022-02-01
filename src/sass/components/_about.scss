@@ -86,17 +86,29 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 39px;
-  a {
+  padding-bottom: 52px;
+  .about__button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  div {
     padding-left: 20px;
+    padding-top: 34px;
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      padding-top: 62px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 45px;
+    }
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 340px;
-    padding-bottom: 66px;
+    padding-bottom: 79px;
   }
   @media screen and (min-width: $desktop) {
     width: 463px;
-    padding-bottom: 146px;
+    padding-bottom: 159px;
   }
 }
 
@@ -130,20 +142,17 @@
   font-size: 12px;
   line-height: 1.62;
   color: $color-midle;
-  padding-bottom: 17px;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     font-size: 14px;
     line-height: 1.76;
-    padding-bottom: 62px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.76;
-    padding-bottom: 45px;
   }
 }
 
