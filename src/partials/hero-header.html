@@ -73,7 +73,7 @@
           Lorem ipsum dolor sit amet, consectetur ad ipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="button__modal-icon" aria-label="Button for open modal">
+        <button type="button" class="button__modal-icon js-open-modal" data-modal="#shop" aria-label="Button for open modal">
           <svg class="hero__btn">
             <use href="images/PRODUCTS_IMAGES/symbol-defs.svg#icon-arrow-right2"></use>
           </svg>
@@ -226,5 +226,21 @@
     </ul>
   </nav>
 </div>
-
-
+<!-- Модальное окно -->
+<div id="shop" class="popup modal" data-modal="#shop">
+  <a href="#about" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#about" class="popup__close js-modal-close">X</a>
+      <h2 class="popup__title">BUY IN OUR SHOPS</h2>
+      <p class="popup__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis nam aperiam deserunt tenetur
+        officiis unde consequatur obcaecati explicabo minima, dolorem et beatae sit ab molestias voluptas. Officia, amet
+        deleniti!<br>
+      <div class="popup__img">
+        <img src="images/img-for-hero-header-tablet/tasty.png" alt="BUY IN OUR SHOPS">
+      </div>
+      </p>
+    </div>
+  </div>
+</div>
