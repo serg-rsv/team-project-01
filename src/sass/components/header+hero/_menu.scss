@@ -3,8 +3,9 @@
   right: 0;
   top: 0;
   background: #e17992;
-  width: 250px;
-  height: 100%;
+  min-width: 250px;
+  height: 100vw;
+  z-index: 50;
 }
 
 .menu__container {
@@ -16,12 +17,10 @@
   margin-right: auto;
 }
 
-.menu__icon {
+.close-button.menu__icon {
+  position: static;
   display: flex;
-  width: 14px;
-  height: 14px;
   margin-left: auto;
-
   margin-bottom: 23px;
 }
 
@@ -31,7 +30,9 @@
 }
 
 .button--size {
-  width: 202px;
+  font-size: 16px;
+  min-width: 209px;
+  border: 1px solid $color-hover-dark;
 }
 
 .menu__site-nav-list {

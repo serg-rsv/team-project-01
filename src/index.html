@@ -43,9 +43,11 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
+
+    <div class="overlay js-overlay-modal overlay--gallery"></div>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script src="./js/modal.js"></script>
 
     <!-- jQuery -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -55,8 +57,6 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <!-- Библиотека попап окошек sweetalert2.github.io -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Инициализация слайдера -->
     <script>
       $('.customer-reviews__slider').slick({

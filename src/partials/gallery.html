@@ -1,7 +1,7 @@
 <!-- Николай Тимощук -->
 <section class="gallery" id="gallery">
     <div class="container">
-        <h2 class="gallery__tittle visually-hidden"></h2>
+        <h2 class="gallery__tittle visually-hidden">Gallery</h2>
         <ul class="gallery__list list">
             <li class="gallery__item" tabindex="1">
                 <div class="gallery__image-thumb">
@@ -71,7 +71,7 @@
                         src="/images/scoops40@1x.jpg" alt="Photo 4. Assorted ice cream" />
                     <div class="gallery__image-overlay">                       
                     </div>
-                    <button type="button" class="gallery__button"><svg class="gallery__svg" xmlns="http://www.w3.org/2000/svg"
+                    <button type="button" class="js-open-modal gallery__button" data-modal="gallery"><svg class="gallery__svg" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
                             <path
                                 d="M411.928 512H100.072c-39.131 0-70.966-31.835-70.966-70.966v-320.25c0-39.131 31.835-70.966 70.966-70.966h311.857c39.131 0 70.966 31.835 70.966 70.966v213.222c0 8.078-6.55 14.629-14.629 14.629-8.08 0-14.629-6.551-14.629-14.629V120.784c0-22.998-18.71-41.707-41.707-41.707H100.072c-22.998 0-41.707 18.71-41.707 41.707v320.25c0 22.998 18.71 41.707 41.707 41.707h311.857c22.998 0 41.707-18.71 41.707-41.707v-28.032c0-8.078 6.55-14.629 14.629-14.629 8.08 0 14.629 6.551 14.629 14.629v28.032c.001 39.131-31.835 70.966-70.966 70.966z" />
@@ -202,23 +202,21 @@
 <!-- GALLERY SECTION END HERE -->
 
 <!-- GALLERY MODAL START HERE -->
-
-<div class="gallery__backdrop is-hidden">
-    <div class="gallery__modal">        
-        <img class="gallery__menu" srcset="
-                images/menu320@1x.jpg 320w,
-                images/menu640@1x.jpg 640w,
-                images/menu640@2x.jpg 1280w
-                "
-            src="images/menu320@1x.jpg" alt="Offers our menu with prices" width="320" />
-        <button type="button" class="close-button">
-            <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px"
-                aria-label="Закрытие меню">
-                <path
-                    d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
-                </svg>
-        </button>
-    </div>
+<div class="modal gallery__modal modal--gallery" data-modal="gallery">        
+    <img class="gallery__menu" srcset="
+            images/menu320@1x.jpg 320w,
+            images/menu640@1x.jpg 640w,
+            images/menu640@2x.jpg 1280w
+            "
+        sizes="(min-width: $tablet) 640px, 100vw"
+        src="images/menu320@1x.jpg" alt="Offers our menu with prices"s/>
+    <button type="button" class="js-modal-close close-button">
+        <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px"
+            aria-label="Закрытие меню">
+            <path
+                d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z">
+            </svg>
+    </button>
 </div>
 
 <!-- GALLERY MODAL END HERE -->

@@ -1,0 +1,18 @@
+.header__burger {
+  @media screen and (min-width: 50px) {
+    display: block;
+    width: 20px;
+    height: 14px;
+    margin-left: auto;
+    margin-top: 19px;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    z-index: 10;
+    margin-top: 0;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
