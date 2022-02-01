@@ -21,6 +21,14 @@
         }
     }
 }
+.about {
+    .scale {
+        transition: 1s; /* Время перехода */
+       }
+       .scale:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+       }
+}
 
 .about__title { 
     font-family: $font-fat;
@@ -30,6 +38,7 @@
     text-transform: uppercase;
     color: $color-second;
     padding-top: 125px;
+    padding-bottom: 15px;
 }
 
 .about__title-primery {
@@ -76,16 +85,11 @@
     a {
         padding-left: 20px;
     }
-    @media screen and (max-width: $tablet) { 
-        padding-bottom: 39px;
-    }
     @media screen and (min-width: $tablet) and (max-width: $desktop){
         width: 340px;
-        padding-bottom: 66px;
     }
     @media screen and (min-width: $desktop){
         width: 463px;
-        padding-bottom: 146px;
     }
 }
 
@@ -102,13 +106,14 @@
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         font-size: 14px;
         line-height: 1.76;
-        padding-bottom: 35px;
+        padding-bottom: 49px;
     }
 
     @media screen and (min-width: $desktop){
         font-size: 16px;
         line-height: 1.76;
         letter-spacing: 0.04em;
+        padding-bottom: 35px;
     }
 }
 
@@ -122,9 +127,6 @@
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
-    @media screen and (max-width: $tablet) { 
-
-    }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
         font-size: 14px;
         line-height: 1.76;
@@ -132,9 +134,10 @@
     }
 
     @media screen and (min-width: $desktop){
-
+        font-size: 14px;
+        line-height: 1.76;
+        padding-bottom: 45px;
     }
-
 }
 
 .about__describes {
@@ -145,9 +148,6 @@
     color: $color-midle;
 }
 
-.about__button {
-
-}
 
 // modal window popup
 .popup {
@@ -180,7 +180,7 @@
         padding: 30px 10px;
 
         .popup__content {
-            background-color: $color-bg-prime;
+            background-color: $color-second;
             color: #000000;
             max-width: 300px;
             border-radius: 6px;
@@ -202,7 +202,7 @@
                 right: 10px;
                 top: 10px;
                 font-size: 20px;
-                color: #000000;
+                color: $color-light ;
                 text-decoration: none;
             }
             
@@ -210,19 +210,29 @@
                 font-size: 28px;
                 margin: 0px 0px 1em 0px;
                 color: $color-main;
+                text-shadow: 2px 2px 2px $color-light;
             }
             
             .popup__text {
-                color: $color-midle;
-                text-align: left;
-
-                .popup__img {
-    
-                }
+                color: $color-light ;
+                text-align: left; 
+                text-shadow: 2px 2px 2px rgba(120, 120, 120, 1);
             }
         }
     }
 }
+
+.popup__img {
+    display: flex;
+    justify-content: center;
+    .scale {
+        transition: 1s; /* Время перехода */
+    }
+    .scale:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+    }
+}
+
 
 .popup:target {
     opacity: 1;
