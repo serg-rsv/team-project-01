@@ -261,6 +261,7 @@
 }
 
 .footer-year {
+    padding: 30px 0 20px 0;
     display: flex;
     justify-content: center;
     border-width: auto;
@@ -285,7 +286,6 @@
     text-align: center;
     color: $color-midle;
     @media screen and (min-width: 768px) {
-        padding: 30px 0 20px 0;
         max-width: 100%;
         line-height: 186%;
         letter-spacing: 0.02em;
@@ -299,9 +299,9 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 90px;
+        margin-bottom: 90px;
     }
     @media screen and (min-width: 1280px) {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
 }
