@@ -1,31 +1,24 @@
 .contacts {
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to top, $color-bg-second 89%, $color-light 89%);
-  }
-
-  @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to top, $color-bg-second 74%, $color-light 74%);
-  }
-
-  @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(to top, $color-bg-second 71%, $color-light 71%);
-  }
-}
-
-.card {
-  @media screen and (max-width: 767px) {
     padding-top: 86px;
   }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-
+    background-image: linear-gradient(to top, $color-bg-second 74%, $color-light 74%);
     padding-top: 119px;
   }
 
   @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to top, $color-bg-second 71%, $color-light 71%);
     padding-top: 132px;
+  }
+}
+
+.card {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
