@@ -10,3 +10,13 @@
     display: block;
   }
 }
+
+.page-scroll {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  opacity: 0.5;
+  z-index: 99;
+}
