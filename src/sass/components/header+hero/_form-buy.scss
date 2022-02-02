@@ -1,0 +1,130 @@
+.modal.modal--buy {
+  background: $color-bg-prime;
+  border: 1px solid $color-hover-dark;
+  z-index: 60;
+
+  & .close-button {
+    margin-bottom: 0;
+  }
+}
+
+.form__title {
+  font-family: $font-fat;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  color: $color-main;
+  background: $color-bg-prime;
+
+  margin-bottom: 30px;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.form-field {
+  position: relative;
+
+  min-width: 320px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-field__text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $color-hover-dark;
+  transition: transform 250ms linear;
+}
+
+.form-field__input {
+  width: 100%;
+  height: 30px;
+
+  padding-left: 15px;
+  border: 1px solid $color-hover-dark;
+  border-radius: 4px;
+  outline: none;
+
+  &:focus + .form-field__text,
+  &:not(:placeholder-shown) + .form-field__text {
+    transform: translate(-70px, -50%);
+    color: $color-light;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.comment-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.comment-field .comment-field__text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.16;
+
+  color: $color-hover-dark;
+
+  margin-bottom: 10px;
+}
+
+.comment-field__comment {
+  padding: 12px 16px;
+}
+
+.comment-field textarea {
+  border: 1px solid $color-hover-dark;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form__button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: $color-light;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $color-light;
+    color: $color-hover-dark;
+  }
+}
+
+.form > .button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}

@@ -250,7 +250,7 @@
 </div>
 
 <!-- Форма покупки товара -->
-<div class="modal" data-modal="form">
+<div class="modal modal--buy" data-modal="form">
   <button type="button" class="close-button menu__icon js-modal-close" aria-label="close button" >
     <svg class="close-button__icon" viewBox="0 0 30 30" width="30px" height="30px" aria-label="Close menu">
       <path
@@ -258,53 +258,47 @@
     </svg>
    </button>
 
-  <form class="form js-speaker-form">
-    <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+  <form class="form" autocomplete="off">
+    <h2 class="form__title">Choose your tasty</h2>
 
-    <label class="form-field">
-      <span class="form-field__text">Имя</span>
-      <input class="form-field__input" type="text" name="name" />
-      <!-- <svg class="form-field__icon">
-        <use href="./images/icons.svg#person-icon"></use>
-      </svg> -->
-    </label>
+    <div class="form__list">
+      <label class="form-field"> 
+        <input class="form-field__input" type="text" name="name" placeholder=" " />
+        <span class="form-field__text">Name:</span>
+      </label>
+      
+      <label class="form-field">        
+        <input class="form-field__input" type="email" name="email" placeholder=" "/>
+        <span class="form-field__text">Email:</span>        
+      </label>
 
-    <label class="form-field">
-      <span class="form-field__text">Телефон</span>
-      <input class="form-field__input" type="tel" name="tel" />
-      <!-- <svg class="form-field__icon">
-        <use href="./images/icons.svg#phone-icon"></use>
-      </svg> -->
-    </label>
-
-    <label class="form-field">
-      <span class="form-field__text">Почта</span>
-      <input class="form-field__input" type="email" name="email" />
-      <!-- <svg class="form-field__icon">
-        <use href="./images/icons.svg#email-icon"></use>
-      </svg> -->
-    </label>
+      <label class="form-field">
+        <input class="form-field__input" type="tel" name="tel" placeholder=" " />
+        <span class="form-field__text">Tel:</span>       
+      </label>
+          
+    </div>
 
     <label class="comment-field">
-      <span class="comment-field__text">Комментарий</span>
+      <span class="comment-field__text">Vishes to buy</span>
       <textarea
         class="comment-field__comment"
         name="comment"
         id="comment"
-        rows="6"
-        placeholder="Введите текст"
+        rows="5"
+        placeholder="Input text"
       ></textarea>
     </label>
 
-    <label class="agree">
+    <!-- <label class="agree">
       <input class="agree__input" type="checkbox" name="agree" />
       <span class="agree__icon"></span>
       <span class="agree__text"
         >Соглашаюсь с рассылкой и принимаю
         <a href="#" class="agree__link">Условия договора</a></span
       >
-    </label>
+    </label> -->
 
-    <button type="submit" class="button form__button">Отправить</button>
+    <button type="submit" class="button form__button">checkout</button>
   </form>
 </div>
