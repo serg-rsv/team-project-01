@@ -3,7 +3,7 @@
     openMenuBtn: document.querySelector('[data-menu-btn-open]'),
     closeMenuBtn: document.querySelector('[data-menu-btn-close]'),
     mobileMenu: document.querySelector('[data-menu]'),
-    mobileLink: document.querySelectorAll('[js-menu-link]'),
+    mobileLink: document.querySelectorAll('[data-menu-link]'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleModal);
