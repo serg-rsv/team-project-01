@@ -1,9 +1,9 @@
-$actions: "color", "fill", "border", "background-color", "box-shadow";
+$actions: "color", "fill", "border", "background-color", "box-shadow", "stroke";
 
 @mixin generateAction($actions) {
   @each $actionName in $actions {
     .h--#{$actionName} {
-      transition: #{$actionName} 1s $animationTimeFunction;
+      transition: #{$actionName} $animationDuration $animationTimeFunction;
     }
   }
 }

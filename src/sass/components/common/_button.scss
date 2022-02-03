@@ -6,19 +6,30 @@
   font-size: 14px;
   line-height: 1.28;
   text-align: center;
-  color: $color-main;
+  color: $color-light;
   padding-left: 36px;
   padding-right: 56px;
   height: 44px;
-  background: $color-light;
+  background: $color-main;
   border-radius: 22px;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background: $color-hover-dark;
-    color: $color-light;
-    cursor: pointer;
+    transition: background $animationDuration $animationTimeFunction;
+  }
+}
+
+.button__main--light {
+  @extend .button__main;
+  background-color: $color-light;
+  color: $color-main;
+
+  &:hover {
+    background: $color-hover-light;
+    transition: background $animationDuration $animationTimeFunction;
   }
 }
 

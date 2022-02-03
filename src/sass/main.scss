@@ -10,7 +10,7 @@
 @import './components/common/container';
 @import './components/common/button';
 @import './components/common/close-button';
-@import "./components/common/actions";
+// @import "./components/common/actions";
 
 // Hero header import start
 @import './components/header+hero/header';
@@ -52,3 +52,4 @@
 @import './components/footer/footer';
 // Footer import end
 @import './lib/modal';
+@import "./components/common/actions";

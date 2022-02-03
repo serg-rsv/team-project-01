@@ -6,13 +6,19 @@
     margin-left: auto;
     margin-top: 19px;
     cursor: pointer;
+    stroke: $color-main;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     z-index: 10;
     margin-top: 0;
     margin-right: 30px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    stroke: $color-hover-light;
   }
 }
