@@ -1,0 +1,11 @@
+$actions: "color", "fill", "border", "background-color", "box-shadow";
+
+@mixin generateAction($actions) {
+  @each $actionName in $actions {
+    .h--#{$actionName} {
+      transition: #{$actionName} 1s $animationTimeFunction;
+    }
+  }
+}
+
+@include generateAction($actions);
