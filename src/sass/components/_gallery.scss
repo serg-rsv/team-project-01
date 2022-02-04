@@ -346,7 +346,7 @@
   display: inline-block;
   padding-right: 5px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
