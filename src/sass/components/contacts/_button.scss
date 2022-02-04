@@ -8,7 +8,7 @@
 }
 
 .button {
-  background: #d41342;
+  background: $color-main;
   border-radius: 22px;
 
   font-weight: 700;
@@ -45,6 +45,10 @@
 
     margin-top: 86px;
   }
+
+  &:hover {
+    background-color: $color-hover-dark;
+  }
 }
 
 .button-container__button {
@@ -60,7 +64,6 @@
 
   &:hover {
     background-color: $color-hover-light;
-    transition: $function-transition;
   }
 
   @media screen and (min-width: $tablet) {

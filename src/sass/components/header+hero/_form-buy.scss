@@ -118,15 +118,14 @@ textarea {
   line-height: 1.2;
   text-transform: uppercase;
 
-  color: $color-light;
   margin-left: auto;
   margin-right: auto;
 
-  &:hover,
-  &:focus {
-    background-color: $color-light;
-    color: $color-hover-dark;
+  &:hover {
+    box-shadow: 3px 3px 5px 0px rgba(34, 60, 80, 0.2);
+    transition: box-shadow $animationDuration linear;
   }
+
 }
 
 .form > .button {
