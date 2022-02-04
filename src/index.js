@@ -1,4 +1,4 @@
 import './sass/main.scss';
 import './js/mobile-menu';
 import './js/lib/modal-multy';
-import './js/count.js';
+import './js/count_cafes';
