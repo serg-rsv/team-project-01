@@ -21,3 +21,14 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 200;
+    stroke: $color-main;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

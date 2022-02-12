@@ -1,120 +1,150 @@
-    .advantages__section {
-        background-color: $color-bg-second;
-    }
-    
-    .advantages {
-        margin-left: 10px;
-        margin-right: 60px;
-        flex-direction: row;
-        padding-top: 39px;
-        @media screen and (min-width: $tablet) {
-            display: flex;
-            margin-left: 16px;
-            margin-right: 66px;
-            padding-top: 66px;
-        }
-        @media screen and (min-width: $desktop) {
-            margin-left: 100px;
-            margin-right: 100px;
-            padding-top: 39px;
-        }
-    }
-    
-    .advantages__icon1::before {
-        content: url(/images/advant1.png);
-        position: relative;
-        width: 33px;
-        height: 50px;
-        bottom: 16px;
-        @media screen and (min-width: $tablet) {
-            bottom: 36px;
-        }
-        @media screen and (min-width: $desktop) {
-            bottom: 40px;
-        }
-    }
-    
-    .advantages__icon2::before {
-        content: url(/images/advant2.png);
-        position: relative;
-        width: 50px;
-        height: 50px;
-        bottom: 16px;
-        @media screen and (min-width: $tablet) {
-            bottom: 36px;
-        }
-        @media screen and (min-width: $desktop) {
-            bottom: 40px;
-        }
-    }
-    
-    .advantages__icon3::before {
-        content: url(/images/advant3.png);
-        position: relative;
-        width: 44px;
-        height: 50px;
-        bottom: 16px;
-        @media screen and (min-width: $tablet) {
-            bottom: 36px;
-        }
-        @media screen and (min-width: $desktop) {
-            bottom: 40px;
-        }
-    }
-    
-    .advantages__title {
-        color: $color-main;
-        font-family: $font-fat;
-        font-style: normal;
-        font-size: 36px;
-        line-height: 1.13;
-        letter-spacing: 0.04em;
-        padding-bottom: 15px;
-        @media screen and (min-width: $tablet) {
-            padding-bottom: 13px;
-            font-size: 48px;
-            line-height: 1.14;
-        }
-        @media screen and (min-width: $desktop) {
-            font-size: 58px;
-            line-height: 1.13;
-        }
-    }
-    
-    .advantages__text {
-        font-family: $font-main;
-        font-style: normal;
-        font-size: 12px;
-        line-height: 1.66;
-        color: $color-dark;
-        font-weight: bold;
-        @media screen and (min-width: $tablet) {
-            font-size: 14px;
-            line-height: 1.71;
-        }
-        @media screen and (min-width: $desktop) {
-            font-size: 16px;
-            line-height: 1.75;
-            letter-spacing: 0.02em;
-        }
-    }
-    
-    .advantages__item {
-        @media screen and (min-width: $tablet) {
-            width: 100%;
-        }
-        @media screen and (min-width: $desktop) {
-            width: 100%;
-        }
-    }
-    
-    .advantages__item:not(:last-child) {
-        margin-bottom: 38px;
-        @media screen and (min-width: $tablet) {
-            margin-right: 60px;
-            margin-bottom: 0;
-        }
-        @media screen and (min-width: $desktop) {
-            margin-right: 30px;
-        }
-    }
+.advantages__section {
+  background-color: $color-bg-second;
+}
+
+.advantages {
+  margin-left: 10px;
+  margin-right: 60px;
+  flex-direction: row;
+  padding-top: 39px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 66px;
+    padding-top: 66px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 39px;
+  }
+}
+
+.advantages__icon-box {
+  position: relative;
+  bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 40px;
+  }
+}
+
+.advantages__title {
+  color: $color-main;
+  font-family: $font-fat;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  padding-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.advantages__text {
+  font-family: $font-main;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.66;
+  color: $color-dark;
+  font-weight: bold;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__item {
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
+.advantage__icon {
+  fill: none;
+  stroke: #ffa5ba;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
+}
+
+.path--thin {
+  stroke-width: 0.5;
+}
+
+.advantages__item:hover .path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 2.5s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#path1 {
+  animation-delay: 0.5s;
+}
+
+#path2 {
+  animation-delay: 1.9s;
+}
+
+#path3 {
+  animation-delay: 1.7s;
+}
+
+#path4 {
+  animation-delay: 1.3s;
+}
+#path5 {
+  animation-delay: 2.2s;
+}
+#path6 {
+  animation-delay: 2.5s;
+}
+#path7 {
+  animation-delay: 2.2s;
+}
+#path8 {
+  animation-delay: 2.5s;
+}
+#path9 {
+  animation-delay: 0.8s;
+}
+
+#path10 {
+  animation-delay: 1.4s;
+}
+#path11 {
+  animation-delay: 2.1s;
+}
+
+@import './components/common/animation';
